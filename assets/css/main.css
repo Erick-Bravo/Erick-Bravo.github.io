@@ -3712,7 +3712,7 @@ a, a:hover, a:focus, a:active {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		align-items: baseline;
+		align-items: center;
 		justify-content: center;
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
