@@ -2244,6 +2244,8 @@ a, a:hover, a:focus, a:active {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: none;
 		position: relative;
+		width: 4.25em;
+		height: 4.25em;
 	}
 
 		.icon:before {
