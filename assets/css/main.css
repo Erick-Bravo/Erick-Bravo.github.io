@@ -76,6 +76,10 @@ input, select, textarea {
 	border-radius: 50%;
 }
 
+.proj-icons {
+	margin-bottom: 30px;
+}
+
 /* Basic */
 
 	@-ms-viewport {
