@@ -86,6 +86,19 @@ a, a:hover, a:focus, a:active {
 	color: inherit;
 }
 
+#footer-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#footer-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 /* Basic */
 
