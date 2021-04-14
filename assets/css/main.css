@@ -99,6 +99,13 @@ a, a:hover, a:focus, a:active {
 	justify-content: center;
 }
 
+#skills-container {
+	display: flex;
+	align-items: center;
+	display: center;
+	flex-direction: row;
+}
+
 
 /* Basic */
 
