@@ -125,10 +125,16 @@ a, a:hover, a:focus, a:active {
 	flex-direction: column;
 }
 
+/* Header */
+#header p {
+	font-size: 40px;
+	margin: 25px;
+}
+
 /* resume */
 
 #header a {
-	font-size: 40px;
+	font-size: 30px;
 	margin: 25px;
 }
 
