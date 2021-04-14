@@ -104,8 +104,13 @@ a, a:hover, a:focus, a:active {
 
 #skills-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	align-items: flex-start;
 	flex-direction: row;
+}
+
+#skills-container h2{
+	font-size: 45px;
 }
 
 #skills-container #skills-left{
