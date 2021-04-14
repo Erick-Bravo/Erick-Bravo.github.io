@@ -102,8 +102,19 @@ a, a:hover, a:focus, a:active {
 #skills-container {
 	display: flex;
 	align-items: center;
-	display: center;
 	flex-direction: row;
+}
+
+#skills-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#skills-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 
