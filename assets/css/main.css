@@ -104,19 +104,19 @@ a, a:hover, a:focus, a:active {
 
 #skills-container {
 	display: flex;
-	align-items: center;
+	justify-content: space-around;
 	flex-direction: column;
 }
 
 #skills-container #skills-left{
 	display: flex;
-	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
 
 #skills-container #skills-right{
 	display: flex;
-	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 }
 
