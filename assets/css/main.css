@@ -99,19 +99,22 @@ a, a:hover, a:focus, a:active {
 	justify-content: center;
 }
 
+
+/* skill */
+
 #skills-container {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 }
 
-#skills-container {
+#skills-container #skills-left{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-#skills-container {
+#skills-container #skills-right{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
