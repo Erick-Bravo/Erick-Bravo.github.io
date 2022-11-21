@@ -22,9 +22,41 @@ export const IntroContainer = styled(Box)({
    justifyContent: "center",
    alignItems: "center",
    flexDirection: "column",
-   width: "600px",
-   height: "300px",
+   width: "100%",
+   height: "350px",
+   padding: "20px 40px",
+   boxSizing: "border-box",
+   [`@media(min-width: ${breakpoints.tablet}px)`]: {
+      display: "flex",
+      justifyContent: "space-between",
+      flexDirection: "row",
+      width: "700px",
+      padding: "20px 90px",
+    },
+})
+
+export const NameAndTitleContainer = styled(Box)({
+   display: "flex",
+   justifyContent: "center",
+   alignItems: "center",
+   flexDirection: "column",
    color: "white"
+});
+
+export const ImageContainer = styled(Box)({
+   display: "flex",
+   justifyContent: "center",
+   alignItems: "center",
+});
+
+export const ProfileImage = styled("img")({
+   filter: "drop-shadow(3px 3px 3px black)",
+   height: "140px",
+   marginTop: "40px",
+   [`@media(min-width: ${breakpoints.tablet}px)`]: {
+      height: "200px",
+      marginTop: 0
+   },
 })
 
 export const NameTypography = styled(Box)({
