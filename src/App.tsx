@@ -1,5 +1,6 @@
 import {
   ContentContainer,
+  Footer,
   IntroContainer,
   NameTypography,
   PortfolioContainer,
@@ -14,6 +15,7 @@ const App = () => {
         <TitleTypography>Software Developer</TitleTypography>
       </IntroContainer>
       <ContentContainer></ContentContainer>
+      <Footer>I am the Footer</Footer>
     </PortfolioContainer>
   );
 };
