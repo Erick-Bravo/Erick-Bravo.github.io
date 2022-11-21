@@ -74,19 +74,3 @@ export const TitleTypography = styled(Box)({
    },
 });
 
-export const ContentContainer = styled(Box)({
-   width: "100%",
-   boxSizing: "border-box",
-   height: "2000px",
-   padding: "4px",
-   margin: "0 0 25px 0",
-   background: "white",
-   borderRadius: "4px",
-   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-      width: "700px"
-    },
-})
-
-export const Footer = styled(Box)({
-   height: "300px"
-})

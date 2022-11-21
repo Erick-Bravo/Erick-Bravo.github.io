@@ -1,6 +1,4 @@
 import {
-  ContentContainer,
-  Footer,
   ImageContainer,
   IntroContainer,
   NameAndTitleContainer,
@@ -9,6 +7,8 @@ import {
   ProfileImage,
   TitleTypography,
 } from "./App.styles";
+import Content from "./components/Content/Content";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -22,8 +22,8 @@ const App = () => {
           <ProfileImage src="./Baldy-modified.png" alt="Profile Pic" />
         </ImageContainer>
       </IntroContainer>
-      <ContentContainer></ContentContainer>
-      <Footer>I am the Footer</Footer>
+      <Content />
+      <Footer />
     </PortfolioContainer>
   );
 };
