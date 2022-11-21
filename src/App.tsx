@@ -1,6 +1,9 @@
+import { AppSyled } from "./App.styles";
 
 const App = () => {
-  return <div>Woah, a React Portfolio? Thats Bananas!</div>;
-}
+  return (
+    <AppSyled>Woah, a React Portfolio? Thats Bananas!</AppSyled>
+  );
+};
 
 export default App;
