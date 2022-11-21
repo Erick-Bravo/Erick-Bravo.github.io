@@ -1,8 +1,20 @@
-import { AppSyled } from "./App.styles";
+import {
+  ContentContainer,
+  IntroContainer,
+  NameTypography,
+  PortfolioContainer,
+  TitleTypography,
+} from "./App.styles";
 
 const App = () => {
   return (
-    <AppSyled>Woah, a React Portfolio? Thats Bananas!</AppSyled>
+    <PortfolioContainer>
+      <IntroContainer>
+        <NameTypography>Erick Bravo</NameTypography>
+        <TitleTypography>Software Developer</TitleTypography>
+      </IntroContainer>
+      <ContentContainer></ContentContainer>
+    </PortfolioContainer>
   );
 };
 
