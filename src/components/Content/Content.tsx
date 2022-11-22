@@ -1,23 +1,30 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
-import { breakpoints } from "../../StyleTheme/theme";
+import { breakpoints, maxWidths } from "../../StyleTheme/theme";
+import NavBar from "../Navbar/NavBar";
 
 export const ContentContainer = styled(Box)({
   width: "100%",
   boxSizing: "border-box",
   height: "2000px",
-  padding: "4px",
+  padding: "0",
   margin: "0 0 25px 0",
-  background: "white",
+  background: "#d8d8d8",
   borderRadius: "4px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-    width: "700px",
+    width: maxWidths.tablet.content
+  },
+  [`@media(min-width: ${breakpoints.desktop}px)`]: {
+    width: maxWidths.desktop.content
   },
 });
 
 const Content = () => {
   return (
-    <ContentContainer>This is the Content ContentContainer</ContentContainer>
+    <ContentContainer>
+      <NavBar />
+      This is the Content ContentContainer
+    </ContentContainer>
   );
 };
 

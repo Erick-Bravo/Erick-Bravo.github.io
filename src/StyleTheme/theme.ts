@@ -33,11 +33,11 @@ export const maxWidths = {
     buttons: 343,
   },
   tablet: {
-    content: 544,
+    content: 700,
     buttons: 360,
   },
   desktop: {
-    content: 700,
+    content: 900,
     buttons: 400,
   },
 };
