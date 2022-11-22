@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { breakpoints } from "./StyleTheme/theme";
 
 export const PortfolioContainer = styled(Box)({
@@ -31,7 +31,7 @@ export const IntroContainer = styled(Box)({
       justifyContent: "space-between",
       flexDirection: "row",
       width: "700px",
-      padding: "20px 90px",
+      padding: "20px 90px 0 90px",
     },
 })
 
@@ -74,3 +74,12 @@ export const TitleTypography = styled(Box)({
    },
 });
 
+
+export const TechList = styled(Typography)({
+   display: "flex",
+   justifyContent: "center",
+   alignItems: "center",
+   flexDirection: "column",
+   color: "white",
+   marginBottom: "20px"
+})
