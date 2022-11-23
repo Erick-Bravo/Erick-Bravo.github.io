@@ -59,16 +59,18 @@ export const ProfileImage = styled("img")({
    },
 })
 
-export const NameTypography = styled(Box)({
+export const NameTypography = styled(Typography)({
    fontSize: "32px",
    marginBottom: "20px",
+   // fontFamily: "Concert One",
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
       fontSize: "45px"
    },
 });
 
-export const TitleTypography = styled(Box)({
+export const TitleTypography = styled(Typography)({
    fontSize: "12.5px",
+   opacity: .7,
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
       fontSize: "25px"
    },

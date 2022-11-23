@@ -4,6 +4,7 @@ import { breakpoints } from "../../StyleTheme/theme";
 
 const NavBarContainer = styled(Box)({
     visibility: "hidden",
+    height: 0,
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     visibility: "visible",
     display: "flex",
@@ -15,6 +16,9 @@ const NavBarContainer = styled(Box)({
     borderRadius: "4px",
     boxSizing: "border-box",
     padding: "0 20px",
+  },
+  [`@media(min-width: ${breakpoints.desktop}px)`]: {
+    padding: "0 50px"
   },
 });
 
@@ -38,7 +42,7 @@ const NavBar = () => {
   return (
     <NavBarContainer>
       <NavLink>
-        <ButtonStyled>About</ButtonStyled>
+        <ButtonStyled>Summary</ButtonStyled>
       </NavLink>
       <NavLink>
         <ButtonStyled>Skills</ButtonStyled>

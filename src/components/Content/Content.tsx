@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 import { breakpoints, maxWidths } from "../../StyleTheme/theme";
 import NavBar from "../Navbar/NavBar";
+import Summary from "./Summary/Summary";
 
 export const ContentContainer = styled(Box)({
   width: "100%",
@@ -12,10 +13,10 @@ export const ContentContainer = styled(Box)({
   background: "#d8d8d8",
   borderRadius: "4px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-    width: maxWidths.tablet.content
+    width: maxWidths.tablet.content,
   },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {
-    width: maxWidths.desktop.content
+    width: maxWidths.desktop.content,
   },
 });
 
@@ -23,7 +24,7 @@ const Content = () => {
   return (
     <ContentContainer>
       <NavBar />
-      This is the Content ContentContainer
+      <Summary />
     </ContentContainer>
   );
 };
