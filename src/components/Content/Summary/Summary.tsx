@@ -25,8 +25,7 @@ const Testimonial = styled(Typography)({
   fontStyle: "italic",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     fontSize: "14px",
-    padding: "0 40px"
-    // width: "700px",
+    padding: "0 40px",
   },
 });
 
@@ -45,15 +44,17 @@ const Summary = () => {
         new tech if it means moving the team forward. Besides past client
         projects, I have revamped the Yosemite community website which benefits
         2000+ employees who live in Yosemite National Park. My entire career has
-        been so far fully remote. I have worked with teammates of all time
-        standards, and I am eager to provide skillful contributions on a project
-        of high demand and reward.
+        been so far fully remote. I have worked with teammates of all
+        time zones, and I am eager to provide skillful contributions on a
+        project of high demand and reward.
       </Paragraph>
       <Testimonial align="center">
         “I can not imagine where [the project] would be without Erick, nor would
         I like to imagine that reality. He has continued to be a key member of
         the team from the very beginning.”{" "}
-        <span style={{ fontWeight: "bold" }}>- former collegue at Detroit Labs</span>
+        <span style={{ marginTop: "8px", fontStyle: "normal", fontSize: "12px" }}>
+          - Brandon, colleague Detroit Labs
+        </span>
       </Testimonial>
     </SummaryContainer>
   );
