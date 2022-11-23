@@ -15,10 +15,10 @@ const NavBarContainer = styled(Box)({
     width: "100%",
     borderRadius: "4px",
     boxSizing: "border-box",
-    padding: "0 20px",
+    padding: "0 40px",
   },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {
-    padding: "0 50px"
+    padding: "0 150px"
   },
 });
 
@@ -43,9 +43,6 @@ const NavBar = () => {
     <NavBarContainer>
       <NavLink>
         <ButtonStyled>Summary</ButtonStyled>
-      </NavLink>
-      <NavLink>
-        <ButtonStyled>Skills</ButtonStyled>
       </NavLink>
       <NavLink>
         <ButtonStyled>Projects</ButtonStyled>
