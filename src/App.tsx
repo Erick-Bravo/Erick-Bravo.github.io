@@ -9,7 +9,7 @@ import {
   TechList,
   TitleTypography,
 } from "./App.styles";
-import Content from "./components/Content/Content";
+import Content from "./components/ContentComponents/Content/Content";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -28,8 +28,8 @@ const App = () => {
       <TechList>
         Portfolio Powered By:{" "}
         <Typography sx={{ fontWeight: 600, marginTop: "5px" }}>
-          React <img src="./react-icon.svg" alt="react" height="30px" /> -   
-          Material UI <img src="./mui-icon.svg" alt="mui" height="30px" /> -   
+          React <img src="./react-icon.svg" alt="react" height="30px" /> -
+          Material UI <img src="./mui-icon.svg" alt="mui" height="30px" /> -
           GSAP <img src="./gsap-icon.svg" alt="gsap" height="30px" />
         </Typography>
       </TechList>

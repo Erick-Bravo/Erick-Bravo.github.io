@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
-import { breakpoints, maxWidths } from "../../StyleTheme/theme";
-import NavBar from "../Navbar/NavBar";
-import Projects from "./Projects/Projects";
-import Summary from "./Summary/Summary";
+import { breakpoints, maxWidths } from "../../../StyleTheme/theme";
+import NavBar from "../../Navbar/NavBar";
+import Projects from "../Projects/Projects";
+import Summary from "../Summary/Summary";
 
 export const ContentContainer = styled(Box)({
   width: "100%",
