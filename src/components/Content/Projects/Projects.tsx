@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Box } from '@mui/material';
+import LabTabs from '../../Tabs/Tabs';
 import Header from '../Header/Header';
 
 const ProjectsContainer = styled(Box)({
@@ -10,7 +11,7 @@ const Projects = () => {
     return (
         <ProjectsContainer>
             <Header text="Projects" />
-             This is the Projects Component 
+             <LabTabs />
         </ProjectsContainer>
     );
 };
