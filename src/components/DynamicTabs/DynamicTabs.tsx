@@ -2,7 +2,7 @@ import * as React from 'react';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { TabHRStyled, TabsStyled } from './Tabs.styled';
+import { TabHRStyled, TabsStyled } from './DynamicTabs.styled';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -30,7 +30,7 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-export default function BasicTabs() {
+const DynamicTabs = () => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -60,4 +60,6 @@ export default function BasicTabs() {
       </TabPanel>
     </Box>
   );
-}
+};
+
+export default DynamicTabs;
