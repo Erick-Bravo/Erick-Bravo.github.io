@@ -6,7 +6,7 @@ import Skills from "./Skills";
 
 const SummaryContainer = styled(Box)({
   boxSizing: "border-box",
-  padding: "40px 50px",
+  marginBottom: "40px",
   width: "100%",
 });
 
