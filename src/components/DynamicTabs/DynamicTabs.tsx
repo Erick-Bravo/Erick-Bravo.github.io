@@ -31,7 +31,7 @@ const TabPanel = (props: TabPanelProps) => {
   );
 };
 
-const DynamicTabs = ({ tabsData }: any) => {
+const DynamicTabs = ({ tabData }: any) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (_event: SyntheticEvent, newValue: number) => {
@@ -46,7 +46,7 @@ const DynamicTabs = ({ tabsData }: any) => {
           onChange={handleChange}
           aria-label="basic TabsStyled example"
         >
-          {tabsData.map((data: { label: string }) => (
+          {tabData.map((data: { label: string }) => (
             <Tab label={data.label} />
           ))}
         </TabsStyled>
@@ -54,7 +54,7 @@ const DynamicTabs = ({ tabsData }: any) => {
 
       <TabHRStyled />
 
-      {tabsData.map((data: { content: number }, i: number) => (
+      {tabData.map((data: { content: number }, i: number) => (
         <TabPanel value={value} index={i}>
           {`${data.content} ${i}`}
         </TabPanel>

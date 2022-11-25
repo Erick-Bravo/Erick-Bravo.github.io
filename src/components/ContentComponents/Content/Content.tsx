@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 import { breakpoints, maxWidths } from "../../../StyleTheme/theme";
 import NavBar from "../../Navbar/NavBar";
-import Projects from "../Projects/Projects";
+import ClientProjects from "../Projects/ClientProjects/ClientProjects";
+import PersonalProjects from "../Projects/PersonalProjects/PersonalProjects";
 import Summary from "../Summary/Summary";
 
 export const ContentContainer = styled(Box)({
@@ -31,7 +32,8 @@ const Content = () => {
       <NavBar />
       <InnerContent>
         <Summary />
-        <Projects />
+        <ClientProjects />
+        <PersonalProjects />
       </InnerContent>
     </ContentContainer>
   );
