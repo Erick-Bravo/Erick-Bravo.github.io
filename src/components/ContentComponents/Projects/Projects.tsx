@@ -7,11 +7,18 @@ const ProjectsContainer = styled(Box)({
   marginBottom: "40px",
 });
 
+const tabData = [
+  { label: "BFDI Check-in", content: "content" },
+  { label: "Driveway.com", content: "content" },
+  { label: "Yoscommunity.com", content: "content" },
+  { label: "PartsHouse", content: "content" },
+];
+
 const Projects = () => {
   return (
     <ProjectsContainer>
       <Header text="Projects" />
-      <DynamicTabs />
+      <DynamicTabs tabsData={tabData} />
     </ProjectsContainer>
   );
 };

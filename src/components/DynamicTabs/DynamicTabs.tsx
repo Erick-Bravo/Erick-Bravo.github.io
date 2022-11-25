@@ -1,8 +1,9 @@
-import * as React from 'react';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import { TabHRStyled, TabsStyled } from './DynamicTabs.styled';
+import * as React from "react";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import { TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
+import { SyntheticEvent, useState } from "react";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -10,7 +11,7 @@ interface TabPanelProps {
   value: number;
 }
 
-function TabPanel(props: TabPanelProps) {
+const TabPanel = (props: TabPanelProps) => {
   const { children, value, index, ...other } = props;
 
   return (
@@ -28,36 +29,36 @@ function TabPanel(props: TabPanelProps) {
       )}
     </div>
   );
-}
+};
 
-const DynamicTabs = () => {
-  const [value, setValue] = React.useState(0);
+const DynamicTabs = ({ tabsData }: any) => {
+  const [value, setValue] = useState(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: "100%" }}>
       <Box>
-        <TabsStyled value={value} onChange={handleChange} aria-label="basic TabsStyled example">
-          <Tab label="Item One"  />
-          <Tab label="Item Two"  />
-          <Tab label="Item Three"  />
+        <TabsStyled
+          value={value}
+          onChange={handleChange}
+          aria-label="basic TabsStyled example"
+        >
+          {tabsData.map((data: { label: string }) => (
+            <Tab label={data.label} />
+          ))}
         </TabsStyled>
       </Box>
 
       <TabHRStyled />
 
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
+      {tabsData.map((data: { content: number }, i: number) => (
+        <TabPanel value={value} index={i}>
+          {`${data.content} ${i}`}
+        </TabPanel>
+      ))}
     </Box>
   );
 };
