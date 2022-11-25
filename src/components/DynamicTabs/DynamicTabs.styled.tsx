@@ -20,7 +20,7 @@ export const TabsStyled = styled(Tabs)({
     lineHeight: "16px",
     letterSpacing: "0.1px",
     color: color.gray.one,
-    fontWeight: 500,
+    fontWeight: 600,
     height: "48px",
     transition: "color 0s linear .10s",
     zIndex: 1,
