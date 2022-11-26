@@ -75,13 +75,3 @@ export const TitleTypography = styled(Typography)({
       fontSize: "25px"
    },
 });
-
-
-export const TechList = styled(Typography)({
-   display: "flex",
-   justifyContent: "center",
-   alignItems: "center",
-   flexDirection: "column",
-   color: "white",
-   marginBottom: "20px"
-})
