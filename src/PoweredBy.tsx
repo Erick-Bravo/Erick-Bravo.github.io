@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { breakpoints } from "./StyleTheme/theme";
 
-const TechList = styled(Typography)({
+const TechList = styled(Box)({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",

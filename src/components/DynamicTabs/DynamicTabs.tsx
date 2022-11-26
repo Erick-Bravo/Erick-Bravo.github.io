@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
 import { SyntheticEvent, useState } from "react";
+import styled from "@emotion/styled";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -38,6 +39,13 @@ const DynamicTabs = ({ tabData }: any) => {
     setValue(newValue);
   };
 
+  const TabPanelContainer = styled(Box)({
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "400px",
+    width: "100%",
+  });
+
   return (
     <Box sx={{ width: "100%" }}>
       <Box>
@@ -46,19 +54,38 @@ const DynamicTabs = ({ tabData }: any) => {
           onChange={handleChange}
           aria-label="basic TabsStyled example"
         >
-          {tabData.map((data: { label: string }) => (
-            <Tab label={data.label} />
+          {tabData.map((data: { label: string }, i: number) => (
+            <Tab label={data.label} key={`tab-${i}`} />
           ))}
         </TabsStyled>
       </Box>
 
       <TabHRStyled />
 
-      {tabData.map((data: { content: number }, i: number) => (
-        <TabPanel value={value} index={i}>
-          {`${data.content} ${i}`}
-        </TabPanel>
-      ))}
+      {tabData.map(
+        (
+          data: {
+            content: string;
+            client: string;
+            website: object;
+            description: string;
+          },
+          i: number
+        ) => (
+          <TabPanel value={value} index={i} key={`tabpanel-${i}`}>
+            <TabPanelContainer>
+              {data.client && (
+                <Typography sx={{ marginBottom: "15px" }}>
+                  {data.client}
+                </Typography>
+              )}
+              <Typography sx={{ fontSize: "14px" }}>
+                {data.description}
+              </Typography>
+            </TabPanelContainer>
+          </TabPanel>
+        )
+      )}
     </Box>
   );
 };
