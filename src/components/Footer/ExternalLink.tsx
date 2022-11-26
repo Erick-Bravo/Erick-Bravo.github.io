@@ -9,17 +9,15 @@ type ExternalLinkProps = {
 };
 
 const ImageStyled = styled("img")({
-  height: "50px",
-  filter: "drop-shadow(2px 2px 2px black)",
+  height: "40px",
   ":hover": {
-    filter: "none",
-    opacity: 0.8,
+    filter: "drop-shadow(2px 2px 2px black)",
   },
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-    height: "80px",
+    height: "50px",
   },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {
-    height: "85px",
+    height: "60px",
   },
 });
 

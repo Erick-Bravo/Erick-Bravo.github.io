@@ -19,7 +19,6 @@ const Contact = () => {
     <ContactContainer>
       <Header text="Contact" />
       <InfoContainer>
-        <Typography sx={{ fontWeight: 600 }}>Erick Bravo</Typography>
         <Typography>
           Email:{" "}
           <Link href="mailto:erickbravo120@gmail.com?subject=Subject&body=Body%20goes%20here'">

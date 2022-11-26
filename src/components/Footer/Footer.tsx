@@ -27,17 +27,17 @@ const Footer = () => {
     <FooterStyled>
       <ExternalLink
         href="https://www.linkedin.com/in/erick-bravo-448234203/"
-        imgSrc="./Linkedin.svg"
+        imgSrc="./Linkedin2.svg"
         alt="linkedin"
       />
       <ExternalLink
         href="https://github.com/Erick-Bravo"
-        imgSrc="./github.svg"
+        imgSrc="./github2.svg"
         alt="github"
       />
       <ExternalLink
         href="https://www.instagram.com/erickovarb/?hl=en"
-        imgSrc="./instagram.svg"
+        imgSrc="./instagram2.svg"
         alt="instagram"
       />
     </FooterStyled>
