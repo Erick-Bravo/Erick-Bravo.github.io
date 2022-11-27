@@ -32,7 +32,7 @@ const Footer = () => {
       />
       <ExternalLink
         href="https://github.com/Erick-Bravo"
-        imgSrc="./github2.svg"
+        imgSrc="./github2.png"
         alt="github"
       />
       <ExternalLink
