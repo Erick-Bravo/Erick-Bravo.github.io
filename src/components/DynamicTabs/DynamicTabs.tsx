@@ -16,13 +16,13 @@ interface TabPanelProps {
 
 interface TabDataProps {
   content: string;
-  client?: string;
+  title: string;
+  description: string;
+  responsibilities?: string[];
   website: {
     label: string;
     link: string;
   };
-  description: string;
-  responsibilities?: string[];
 }
 
 const TabPanel = (props: TabPanelProps) => {
@@ -78,9 +78,9 @@ const DynamicTabs = ({ tabData }: any) => {
       {tabData.map((data: TabDataProps, i: number) => (
         <TabPanel value={value} index={i} key={`tabpanel-${i}`}>
           <TabPanelContainer>
-            {data.client && (
+            {data.title && (
               <Typography sx={{ marginBottom: "15px" }}>
-                {data.client}
+                {data.title}
               </Typography>
             )}
             <Typography sx={{ fontSize: "14px", marginBottom: "20px" }}>
