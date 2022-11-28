@@ -27,8 +27,8 @@ const techBFDI = [
   "./gatsby.svg",
   "./typescript.svg",
   "./mui-icon.svg",
-  "./graphql.svg",
   "./emotion.png",
+  "./graphql.svg",
   "https://www.pngfind.com/pngs/b/413-4135111_postgresql-logo-png.png"
 ];
 

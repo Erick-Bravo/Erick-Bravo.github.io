@@ -95,11 +95,18 @@ const DynamicTabs = ({ tabData }: any) => {
                   {data.website.label}
                 </Link>
               ) : (
-                "Under Construction"
+                "Hosting Soon"
               )}
             </Typography>
 
-            <Box sx={{ display: "flex", width: "100%", justifyContent: "center", marginBottom: "20px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                width: "100%",
+                justifyContent: "center",
+                margin: "20px 0",
+              }}
+            >
               {data.tech.map((techLogo) => {
                 return (
                   <Box sx={{ marginRight: "15px" }} key={techLogo}>
