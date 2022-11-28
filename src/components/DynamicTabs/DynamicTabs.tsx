@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import { TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
 import { SyntheticEvent, useState } from "react";
 import styled from "@emotion/styled";
-import { List, ListItem, ListItemIcon } from "@mui/material";
+import { Link, List, ListItem, ListItemIcon } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 interface TabPanelProps {
@@ -86,6 +86,16 @@ const DynamicTabs = ({ tabData }: any) => {
             <Typography sx={{ fontSize: "14px", marginBottom: "20px" }}>
               {data.description}
             </Typography>
+
+            <Typography sx={{ marginBottom: "25px" }}>
+              Website:{" "}
+              {data.website.link ? (
+                <Link href={data.website.link}>{data.website.label}</Link>
+              ) : (
+                "Under Construction"
+              )}
+            </Typography>
+
             {data.responsibilities && (
               <>
                 <Typography sx={{ fontWeight: 600, marginBottom: "15px" }}>
@@ -93,10 +103,10 @@ const DynamicTabs = ({ tabData }: any) => {
                 </Typography>
                 {data.responsibilities.map((list) => {
                   return (
-                    <List key={list} sx={{marginLeft: "35px"}}>
+                    <List key={list} sx={{ marginLeft: "35px" }}>
                       <ListItem disablePadding>
                         <ListItemIcon>
-                          <CheckCircleIcon sx={{color: "green"}} />
+                          <CheckCircleIcon sx={{ color: "green" }} />
                         </ListItemIcon>
                         {list}
                       </ListItem>

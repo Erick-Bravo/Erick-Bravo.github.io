@@ -38,7 +38,7 @@ const tabData = [
   },
   {
     label: "Lithia Motors",
-    title: "Driveway.com",
+    title: "Driveway",
     description:
     "Driveway.com, a direct competitor to Carvana, is the only online car retailer that puts you in complete control of every aspect of car ownership. As part of one of the largest automotive retailers, you get to shop directly from Lithia's nationwide inventory. I worked on the team responsible for the entire vehicle purchase cart-flow.",
     responsibilities: ListLithia,
@@ -56,7 +56,7 @@ const tabData = [
     responsibilities: ListYosemite,
     content: "content",
     website: {
-      label: "Yosemite Comunity Website",
+      label: "Yosemite Community Website",
       link: "https://www.yoscommunity.com",
     },
   },
