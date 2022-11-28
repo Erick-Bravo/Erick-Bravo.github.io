@@ -4,15 +4,23 @@ import DynamicTabs from "../../../DynamicTabs/DynamicTabs";
 import Header from "../../Header/Header";
 
 const ListBFDI = [
-  "hello"
+  "Made important decision making contributions for the initial direction of the project.",
+  "Communicated directly with design teams for design verifications and considerations.",
+  "Researched potential features being introduced to code base.",
+  "Styled and introduced logic in extensive portions of the application."
 ];
 
 const ListLithia = [
-  "hi"
+  "Jumped in and learned existing client code base to perform duties.",
+  "Help maintain and introduce many new features for the vehicle purchase cart flow.",
+  "Meet project deadlines for client stake holders."
 ];
 
 const ListYosemite = [
-  "Go away"
+  "Tasked to portray the Yosemite national park service as a professional and inviting organization.",
+  "Was responsible for a total website refresh using the existing CMS, Squarespace.",
+  "Communicated with multiple supervisors and departments to understand how they wanted to be individually represented on the website.",
+  "Changes included: Adding approved color scheme, formatting, copy, and including valuable information of many departments."
 ];
 
 const tabData = [
@@ -24,7 +32,7 @@ const tabData = [
       link: "",
     },
     description:
-    "Black Family Development Inc’s mission is to strengthen and enhance the lives of children, youth, and families through partnerships that support safe, nurturing, vibrant homes, schools and communities. From beggining to end, I was on a team that created a mental health check-in that works as a Progressive Web Application. In this app, a user will take an assessment and is directed resources depending on user score.",
+    "Black Family Development Inc’s mission is to strengthen and enhance the lives of children, youth, and families through partnerships that support safe, nurturing, vibrant homes, schools and communities. From beggining to end, I was on a team that created a mental health check-in that works as a Progressive Web Application. In this app, a user will take an assessment and is directed relevant resources depending on user score.",
     responsibilities: ListBFDI,
     content: "content",
   },
@@ -48,7 +56,7 @@ const tabData = [
       link: "https://www.yoscommunity.com",
     },
     description:
-    "Coming in, I was responsible for a total and absolute design revamp of the yoscommunity.com squarespace website to help portray the Yosemite National Park Service as a professional and inviting organization. This website is a valuable resource and informer for 2000+ employees of Yosemite National Park.",
+    "Yoscommunity.com website was created to help provide resources to the 2000+ employees who live in Yosemite National Park.",
     responsibilities: ListYosemite,
     content: "content",
   },

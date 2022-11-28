@@ -93,7 +93,7 @@ const DynamicTabs = ({ tabData }: any) => {
                 </Typography>
                 {data.responsibilities.map((list) => {
                   return (
-                    <List key={list} sx={{marginLeft: "60px"}}>
+                    <List key={list} sx={{marginLeft: "35px"}}>
                       <ListItem disablePadding>
                         <ListItemIcon>
                           <CheckCircleIcon sx={{color: "green"}} />
