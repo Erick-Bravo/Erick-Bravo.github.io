@@ -15,7 +15,7 @@ interface TabPanelProps {
 }
 
 interface TabDataProps {
-  content: string;
+  label: string;
   title: string;
   description: string;
   responsibilities?: string[];
@@ -87,13 +87,19 @@ const DynamicTabs = ({ tabData }: any) => {
               {data.description}
             </Typography>
 
-            <Typography sx={{ marginBottom: "25px" }}>
+            <Typography sx={{ marginBottom: "20px" }}>
               Website:{" "}
               {data.website.link ? (
-                <Link href={data.website.link}>{data.website.label}</Link>
+                <Link href={data.website.link} sx={{ fontSize: "15px" }}>
+                  {data.website.label}
+                </Link>
               ) : (
                 "Under Construction"
               )}
+            </Typography>
+
+            <Typography sx={{ marginBottom: "20px" }}>
+              Project Tech:{" "}
             </Typography>
 
             {data.responsibilities && (

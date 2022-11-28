@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 import { breakpoints } from "../../../StyleTheme/theme";
 import Header from "../Header/Header";
-import Skills from "./Skills";
 
 const SummaryContainer = styled(Box)({
   boxSizing: "border-box",
@@ -57,7 +56,6 @@ const Summary = () => {
           - Brandon, colleague Detroit Labs
         </span>
       </Testimonial>
-      <Skills />
     </SummaryContainer>
   );
 };
