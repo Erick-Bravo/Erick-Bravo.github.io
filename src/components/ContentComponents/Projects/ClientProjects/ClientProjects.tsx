@@ -17,6 +17,7 @@ const tabData = [
     },
     description:
       "Black Family Development Inc’s mission is to strengthen and enhance the lives of children, youth, and families through partnerships that support safe, nurturing, vibrant homes, schools and communities. From beggining to end, I was on a team that created a mental health check-in that works as a Progressive Web Application. In this app, a user will take an assessment and is directed resources depending on user score.",
+    responsibilities: "placeholder responsabilities",
     content: "content",
   },
   {
@@ -28,7 +29,8 @@ const tabData = [
     },
     description:
       "Driveway.com, a direct competitor to Carvana, is the only online car retailer that puts you in complete control of every aspect of car ownership. As part of one of the largest automotive retailers, you get to shop directly from Lithia's nationwide inventory. I worked on the team responsible for the entire vehicle purchase cart-flow.",
-    content: "content",
+      responsibilities: "placeholder responsabilities",
+      content: "content",
   },
   {
     label: "Yosemite National Park",
@@ -39,7 +41,8 @@ const tabData = [
     },
     description:
       "Coming in, I was responsible for a total and absolute design revamp of the yoscommunity.com squarespace website to help portray the Yosemite National Park Service as a professional and inviting organization. This website is a valuable resource and informer for 2000+ employees of Yosemite National Park.",
-    content: "content",
+      responsibilities: "placeholder responsabilities",
+      content: "content",
   },
 ];
 

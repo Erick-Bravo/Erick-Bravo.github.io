@@ -20,7 +20,7 @@ const tabData = [
   {
     label: "Good Routes",
     website: {
-      label: "Good Routes",
+      label: "Good Routes",  
       link: ""
     },
     description: "placeholder description",
