@@ -5,11 +5,24 @@ import Box from "@mui/material/Box";
 import { TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
 import { SyntheticEvent, useState } from "react";
 import styled from "@emotion/styled";
+import { List, ListItem, ListItemIcon } from "@mui/material";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
+}
+
+interface TabDataProps {
+  content: string;
+  client?: string;
+  website: {
+    label: string;
+    link: string;
+  };
+  description: string;
+  responsibilities?: string[];
 }
 
 const TabPanel = (props: TabPanelProps) => {
@@ -62,30 +75,39 @@ const DynamicTabs = ({ tabData }: any) => {
 
       <TabHRStyled />
 
-      {tabData.map(
-        (
-          data: {
-            content: string;
-            client: string;
-            website: object;
-            description: string;
-          },
-          i: number
-        ) => (
-          <TabPanel value={value} index={i} key={`tabpanel-${i}`}>
-            <TabPanelContainer>
-              {data.client && (
-                <Typography sx={{ marginBottom: "15px" }}>
-                  {data.client}
-                </Typography>
-              )}
-              <Typography sx={{ fontSize: "14px" }}>
-                {data.description}
+      {tabData.map((data: TabDataProps, i: number) => (
+        <TabPanel value={value} index={i} key={`tabpanel-${i}`}>
+          <TabPanelContainer>
+            {data.client && (
+              <Typography sx={{ marginBottom: "15px" }}>
+                {data.client}
               </Typography>
-            </TabPanelContainer>
-          </TabPanel>
-        )
-      )}
+            )}
+            <Typography sx={{ fontSize: "14px", marginBottom: "20px" }}>
+              {data.description}
+            </Typography>
+            {data.responsibilities && (
+              <>
+                <Typography sx={{ fontWeight: 600, marginBottom: "15px" }}>
+                  Responsibilities
+                </Typography>
+                {data.responsibilities.map((list) => {
+                  return (
+                    <List key={list} sx={{marginLeft: "60px"}}>
+                      <ListItem disablePadding>
+                        <ListItemIcon>
+                          <CheckCircleIcon sx={{color: "green"}} />
+                        </ListItemIcon>
+                        {list}
+                      </ListItem>
+                    </List>
+                  );
+                })}
+              </>
+            )}
+          </TabPanelContainer>
+        </TabPanel>
+      ))}
     </Box>
   );
 };
