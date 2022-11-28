@@ -91,7 +91,12 @@ const DynamicTabs = ({ tabData }: any) => {
             <Typography sx={{ marginBottom: "20px" }}>
               Website:{" "}
               {data.website.link ? (
-                <Link href={data.website.link} sx={{ fontSize: "15px" }}>
+                <Link
+                  href={data.website.link}
+                  sx={{ fontSize: "15px" }}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   {data.website.label}
                 </Link>
               ) : (
