@@ -18,6 +18,7 @@ interface TabDataProps {
   label: string;
   title: string;
   description: string;
+  tech: string[];
   responsibilities?: string[];
   website: {
     label: string;
@@ -98,9 +99,15 @@ const DynamicTabs = ({ tabData }: any) => {
               )}
             </Typography>
 
-            <Typography sx={{ marginBottom: "20px" }}>
-              Project Tech:{" "}
-            </Typography>
+            <Box sx={{ display: "flex", width: "100%", justifyContent: "center", marginBottom: "20px" }}>
+              {data.tech.map((techLogo) => {
+                return (
+                  <Box sx={{ marginRight: "15px" }} key={techLogo}>
+                    <img src={techLogo} alt={techLogo} height="35px" />
+                  </Box>
+                );
+              })}
+            </Box>
 
             {data.responsibilities && (
               <>
