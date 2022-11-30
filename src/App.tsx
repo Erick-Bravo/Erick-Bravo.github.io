@@ -7,7 +7,7 @@ import {
   ProfileImage,
   TitleTypography,
 } from "./App.styles";
-import Content from "./components/ContentComponents/Content/Content";
+import AllContent from "./components/ContentComponents/AllContent/AllContent";
 import Footer from "./components/Footer/Footer";
 import PoweredBy from "./PoweredBy";
 
@@ -24,7 +24,7 @@ const App = () => {
           <ProfileImage src="./Baldy-modified.png" alt="Profile Pic" />
         </ImageContainer>
       </IntroContainer>
-      <Content />
+      <AllContent />
       <Footer />
     </PortfolioContainer>
   );

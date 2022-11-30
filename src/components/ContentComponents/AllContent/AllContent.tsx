@@ -26,7 +26,7 @@ const InnerContent = styled(Box)({
   padding: "40px 50px",
 });
 
-const Content = () => {
+const AllContent = () => {
   return (
     <ContentContainer>
       <NavBar />
@@ -40,4 +40,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default AllContent;
