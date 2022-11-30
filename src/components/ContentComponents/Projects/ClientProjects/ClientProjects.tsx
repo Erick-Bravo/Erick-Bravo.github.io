@@ -26,6 +26,7 @@ const ListYosemite = [
 const techBFDI = [
   "./gatsby.svg",
   "./typescript.svg",
+  "./react-icon.svg",
   "./mui-icon.svg",
   "./emotion.png",
   "./graphql.svg",
@@ -34,6 +35,7 @@ const techBFDI = [
 
 const techLithia = [
   "./typescript.svg",
+  "./react-icon.svg",
   "./mui-icon.svg"
 ];
 
