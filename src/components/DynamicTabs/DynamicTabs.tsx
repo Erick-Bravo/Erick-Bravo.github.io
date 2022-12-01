@@ -19,7 +19,10 @@ interface TabDataProps {
   label: string;
   title: string;
   description: string;
-  tech: string[];
+  tech: {
+    logo: string;
+    text: string;
+  }[];
   responsibilities?: string[];
   website: {
     label: string;
@@ -113,21 +116,30 @@ const DynamicTabs = ({ tabData }: any) => {
                 margin: "20px 0",
               }}
             >
-              {data.tech.map((techLogo) => {
-                return (
-                  <Box
-                  sx={{
-                    margin: "0 15px",
-                    height: "40px",
-                    width: "40px",
-                    position: "relative",
-                  }}
-                  key={techLogo}
-                  >
-                      <Image src={techLogo} alt={techLogo} fill />
-                    </Box> 
-                );
-              })}
+              {data.tech.map(
+                (tech: { logo: string; text: string }, i: number) => {
+                  console.log(typeof tech);
+                  return (
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        margin: "0 15px",
+                        position: "relative",
+                      }}
+                      key={`${tech.logo} - ${i}`}
+                    >
+                      <Image
+                        src={tech.logo}
+                        alt={tech.text}
+                        height="40"
+                        width="40"
+                      />
+                      <Box sx={{ fontSize: "12px" }}>{tech.text}</Box>
+                    </Box>
+                  );
+                }
+              )}
             </Box>
 
             {data.responsibilities && (

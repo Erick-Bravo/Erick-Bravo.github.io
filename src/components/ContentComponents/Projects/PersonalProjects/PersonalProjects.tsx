@@ -3,43 +3,61 @@ import { Box } from "@mui/material";
 import DynamicTabs from "../../../DynamicTabs/DynamicTabs";
 import Header from "../../Header/Header";
 
+// const techPartsHouse = [
+//   "/next-js.svg",
+//   "/typescript.svg",
+//   "/react-icon.svg",
+//   "/chakra.png",
+//   "/postgresql.svg",
+//   "/prisma.svg",
+// ];
+
 const techPartsHouse = [
-    "/next-js.svg",
-    "/typescript.svg",
-    "/react-icon.svg",
-    "/chakra.png",
-    "/postgresql.svg",
-    "/prisma.svg"
+  { logo: "/next-js.svg", text: "Next.js" },
+  { logo: "/typescript.svg", text: "Typescript" },
+  { logo: "/react-icon.svg", text: "React" },
+  { logo: "/chakra.png", text: "Chakra UI" },
+  { logo: "/postgresql.svg", text: "PostgreSQL" },
+  { logo: "/prisma.svg", text: "Prisma" }
 ];
 
+// const techGoodRoutes = [
+//   "/javascript.svg",
+//   "/react-icon.svg",
+//   "/postgresql.svg",
+//   "/sequelize.png",
+// ];
+
 const techGoodRoutes = [
-    "/javascript.svg",
-    "/react-icon.svg",
-    "/postgresql.svg",
-    "/sequelize.png"
+  { logo: "/javascript.svg", text: "Next.js" },
+  { logo: "/react-icon.svg", text: "React" },
+  { logo: "/postgresql.svg", text: "PostgreSQL" },
+  { logo: "/sequelize.png", text: "Sequelize" },
 ];
 
 const tabData = [
-    {
-        label: "Parts House",
-        title: "Parts House 2.0",
-        description: "Revamped from an earlier primitive version, Parts House aims to allow a user to keep track various utilities and belongings in their home. Users can save item info and set notifications to re-purchase with the proper purchase link.",
-        tech: techPartsHouse,
-        website: {
-            label: "Parts House 2.0",
-            link: "",
-        },
+  {
+    label: "Parts House",
+    title: "Parts House 2.0",
+    description:
+      "Revamped from an earlier primitive version, Parts House aims to allow a user to keep track various utilities and belongings in their home. Users can save item info and set notifications to re-purchase with the proper purchase link.",
+    tech: techPartsHouse,
+    website: {
+      label: "Parts House 2.0",
+      link: "",
     },
-    {
-        label: "Good Routes",
-        title: "Good Routes",
-        description: "Good Routes is a fun clone of Good Reads group project while studying at App Academy.",
-        tech: techGoodRoutes,
-        website: {
-            label: "Good Routes",  
-            link: "https://national-routes-app.herokuapp.com/"
-        },
+  },
+  {
+    label: "Good Routes",
+    title: "Good Routes",
+    description:
+      "Good Routes is a fun clone of Good Reads group project while studying at App Academy.",
+    tech: techGoodRoutes,
+    website: {
+      label: "Good Routes",
+      link: "https://national-routes-app.herokuapp.com/",
     },
+  },
 ];
 
 const PersonalProjectsContainer = styled(Box)({

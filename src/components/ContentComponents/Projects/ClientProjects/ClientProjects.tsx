@@ -24,23 +24,23 @@ const ListYosemite = [
 ];
 
 const techBFDI = [
-  "/gatsby.svg",
-  "/typescript.svg",
-  "/react-icon.svg",
-  "/mui-icon.svg",
-  "/emotion.png",
-  "/graphql.svg",
-  "/contentful.png"
+  { logo: "/gatsby.svg", text: "Gatsby" },
+  { logo: "/typescript.svg", text: "Typscript" },
+  { logo: "/react-icon.svg", text: "React" },
+  { logo: "/mui-icon.svg", text: "Material UI" },
+  { logo: "/emotion.png", text: "Emotion" },
+  { logo: "/graphql.svg", text: "GraphQL" },
+  { logo: "/contentful.png", text: "Contentful" },
 ];
 
 const techLithia = [
-  "/typescript.svg",
-  "/react-icon.svg",
-  "/mui-icon.svg"
+  { logo: "/typescript.svg", text: "Typscript" },
+  { logo: "/react-icon.svg", text: "React" },
+  { logo: "/mui-icon.svg", text: "Material UI" },
 ];
 
 const techYosemite = [
-  "/squarespace.svg",
+  { logo: "/squarespace.svg", text: "Squarespace" },
 ];
 
 const tabData = [
