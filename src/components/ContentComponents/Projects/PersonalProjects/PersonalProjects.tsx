@@ -3,15 +3,6 @@ import { Box } from "@mui/material";
 import DynamicTabs from "../../../DynamicTabs/DynamicTabs";
 import Header from "../../Header/Header";
 
-// const techPartsHouse = [
-//   "/next-js.svg",
-//   "/typescript.svg",
-//   "/react-icon.svg",
-//   "/chakra.png",
-//   "/postgresql.svg",
-//   "/prisma.svg",
-// ];
-
 const techPartsHouse = [
   { logo: "/next-js.svg", text: "Next.js" },
   { logo: "/typescript.svg", text: "Typescript" },
@@ -20,13 +11,6 @@ const techPartsHouse = [
   { logo: "/postgresql.svg", text: "PostgreSQL" },
   { logo: "/prisma.svg", text: "Prisma" }
 ];
-
-// const techGoodRoutes = [
-//   "/javascript.svg",
-//   "/react-icon.svg",
-//   "/postgresql.svg",
-//   "/sequelize.png",
-// ];
 
 const techGoodRoutes = [
   { logo: "/javascript.svg", text: "Next.js" },

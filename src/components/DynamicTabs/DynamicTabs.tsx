@@ -113,17 +113,18 @@ const DynamicTabs = ({ tabData }: any) => {
                 display: "flex",
                 width: "100%",
                 justifyContent: "center",
-                margin: "20px 0",
+                alignItems: "center",
+                margin: "20px 0 40px 0",
               }}
             >
               {data.tech.map(
                 (tech: { logo: string; text: string }, i: number) => {
-                  console.log(typeof tech);
                   return (
                     <Box
                       sx={{
                         display: "flex",
                         flexDirection: "column",
+                        alignItems: "center",
                         margin: "0 15px",
                         position: "relative",
                       }}
@@ -135,7 +136,7 @@ const DynamicTabs = ({ tabData }: any) => {
                         height="40"
                         width="40"
                       />
-                      <Box sx={{ fontSize: "12px" }}>{tech.text}</Box>
+                      <Box sx={{ fontSize: "12px", marginTop: "10px", fontWeight: 600}}>{tech.text}</Box>
                     </Box>
                   );
                 }
