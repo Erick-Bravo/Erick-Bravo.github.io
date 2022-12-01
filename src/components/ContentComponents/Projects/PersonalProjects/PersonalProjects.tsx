@@ -7,7 +7,7 @@ const techPartsHouse = [
     "/next-js.svg",
     "/typescript.svg",
     "/react-icon.svg",
-    "https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true",
+    "/chakra.png",
     "/postgresql.svg",
     "/prisma.svg"
 ];

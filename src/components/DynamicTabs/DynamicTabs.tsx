@@ -8,7 +8,6 @@ import styled from "@emotion/styled";
 import { Link, List, ListItem, ListItemIcon } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Image from "next/image";
-import { height } from "@mui/system";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -110,7 +109,6 @@ const DynamicTabs = ({ tabData }: any) => {
               sx={{
                 display: "flex",
                 width: "100%",
-                height: "40px",
                 justifyContent: "center",
                 margin: "20px 0",
               }}
@@ -120,8 +118,8 @@ const DynamicTabs = ({ tabData }: any) => {
                   <Box
                   sx={{
                     margin: "0 15px",
-                    height: "100%",
-                    width: "45px",
+                    height: "40px",
+                    width: "40px",
                     position: "relative",
                   }}
                   key={techLogo}

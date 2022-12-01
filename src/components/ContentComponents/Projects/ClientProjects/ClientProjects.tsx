@@ -30,7 +30,7 @@ const techBFDI = [
   "/mui-icon.svg",
   "/emotion.png",
   "/graphql.svg",
-  "https://www.pngfind.com/pngs/b/413-4135111_postgresql-logo-png.png"
+  "/contentful.png"
 ];
 
 const techLithia = [
