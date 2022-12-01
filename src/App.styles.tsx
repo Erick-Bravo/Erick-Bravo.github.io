@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
+import Image from "next/image";
 import { breakpoints } from "./StyleTheme/theme";
 
 export const PortfolioContainer = styled(Box)({
@@ -11,7 +12,6 @@ export const PortfolioContainer = styled(Box)({
    width: "calc(100vw - 15px)",
    padding: "25px",
    margin: 0,
-   boxSizing: "border-box",
    // backgroundImage: "linear-gradient(#235347, #D56172)",
    //https://cssgradient.io/
    background: "linear-gradient(210deg, rgba(6,82,43,1) 0%, rgba(82,142,224,1) 100%)"
@@ -25,7 +25,6 @@ export const IntroContainer = styled(Box)({
    width: "100%",
    height: "350px",
    padding: "20px 40px",
-   boxSizing: "border-box",
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
       display: "flex",
       justifyContent: "space-between",
@@ -49,12 +48,14 @@ export const ImageContainer = styled(Box)({
    alignItems: "center",
 });
 
-export const ProfileImage = styled("img")({
+export const ProfileImage = styled(Image)({
    filter: "drop-shadow(3px 3px 3px black)",
    height: "140px",
+   width: "140px",
    marginTop: "40px",
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
       height: "200px",
+      width: "200px",
       marginTop: 0
    },
 })

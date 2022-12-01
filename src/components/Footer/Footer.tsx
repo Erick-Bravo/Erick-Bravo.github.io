@@ -10,7 +10,6 @@ export const FooterStyled = styled(Box)({
   height: "50px",
   width: "100%",
   maxWidth: "450px",
-  boxSizing: "border-box",
   padding: "0 40px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     padding: "0 0",

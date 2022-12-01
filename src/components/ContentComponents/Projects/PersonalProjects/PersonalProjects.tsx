@@ -4,19 +4,19 @@ import DynamicTabs from "../../../DynamicTabs/DynamicTabs";
 import Header from "../../Header/Header";
 
 const techPartsHouse = [
-    "./next-js.svg",
-    "./typescript.svg",
-    "./react-icon.svg",
+    "/next-js.svg",
+    "/typescript.svg",
+    "/react-icon.svg",
     "https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true",
-    "./postgresql.svg",
-    "./prisma.svg"
+    "/postgresql.svg",
+    "/prisma.svg"
 ];
 
 const techGoodRoutes = [
-    "./javascript.svg",
-    "./react-icon.svg",
-    "./postgresql.svg",
-    "./sequelize.png"
+    "/javascript.svg",
+    "/react-icon.svg",
+    "/postgresql.svg",
+    "/sequelize.png"
 ];
 
 const tabData = [

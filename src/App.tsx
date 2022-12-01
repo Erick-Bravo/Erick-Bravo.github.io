@@ -21,7 +21,12 @@ const App = () => {
           <TitleTypography>Software Developer</TitleTypography>
         </NameAndTitleContainer>
         <ImageContainer>
-          <ProfileImage src="./Baldy-modified.png" alt="Profile Pic" />
+          <ProfileImage
+            src="/Baldy-modified.png"
+            alt="Profile Pic"
+            height="140"
+            width="140"
+          />
         </ImageContainer>
       </IntroContainer>
       <AllContent />

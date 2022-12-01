@@ -24,23 +24,23 @@ const ListYosemite = [
 ];
 
 const techBFDI = [
-  "./gatsby.svg",
-  "./typescript.svg",
-  "./react-icon.svg",
-  "./mui-icon.svg",
-  "./emotion.png",
-  "./graphql.svg",
+  "/gatsby.svg",
+  "/typescript.svg",
+  "/react-icon.svg",
+  "/mui-icon.svg",
+  "/emotion.png",
+  "/graphql.svg",
   "https://www.pngfind.com/pngs/b/413-4135111_postgresql-logo-png.png"
 ];
 
 const techLithia = [
-  "./typescript.svg",
-  "./react-icon.svg",
-  "./mui-icon.svg"
+  "/typescript.svg",
+  "/react-icon.svg",
+  "/mui-icon.svg"
 ];
 
 const techYosemite = [
-  "./squarespace.svg",
+  "/squarespace.svg",
 ];
 
 const tabData = [

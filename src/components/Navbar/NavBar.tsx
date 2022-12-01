@@ -14,7 +14,6 @@ const NavBarContainer = styled(Box)({
     backgroundColor: "#4B98AB",
     width: "100%",
     borderRadius: "4px",
-    boxSizing: "border-box",
     padding: "0 40px",
   },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {

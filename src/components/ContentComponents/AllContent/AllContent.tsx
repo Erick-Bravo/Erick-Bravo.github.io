@@ -9,7 +9,6 @@ import Summary from "../Summary/Summary";
 
 export const ContentContainer = styled(Box)({
   width: "100%",
-  boxSizing: "border-box",
   padding: "0",
   margin: "0 0 25px 0",
   background: "#d8d8d8",

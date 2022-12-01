@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
+import Image from "next/image";
 import { breakpoints } from "./StyleTheme/theme";
 
 const TechList = styled(Box)({
@@ -14,9 +15,9 @@ const Powered = styled(Typography)({
   fontSize: "10px",
   marginRight: "18px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-    fontSize: "12px"
+    fontSize: "12px",
   },
-})
+});
 
 const IconContainer = styled(Typography)({
   fontSize: "10px",
@@ -27,18 +28,48 @@ const IconContainer = styled(Typography)({
   },
 });
 
-const imgHeight = "20px";
+const imgSize = 20;
 
 const PoweredBy = () => {
   return (
     <TechList>
       <Powered>Portfolio programmed with:</Powered>
       <IconContainer>
-        Next.js <img src="./next-js.svg" alt="next.js" height={imgHeight} /> -
-        React <img src="./react-icon.svg" alt="react" height={imgHeight} /> -
-        Material UI <img src="./mui-icon.svg" alt="mui" height={imgHeight} /> -
-        Emotion <img src="./emotion.png" alt="emotion" height={imgHeight} /> -
-        GSAP <img src="./gsap-icon.svg" alt="gsap" height={imgHeight} />
+        Next.js{" "}
+        <Image
+          src="/next-js.svg"
+          alt="next.js"
+          height={imgSize}
+          width={imgSize}
+        />{" "}
+        - React{" "}
+        <Image
+          src="/react-icon.svg"
+          alt="react"
+          height={imgSize}
+          width={imgSize}
+        />{" "}
+        - Material UI{" "}
+        <Image
+          src="/mui-icon.svg"
+          alt="mui"
+          height={imgSize}
+          width={imgSize}
+        />{" "}
+        - Emotion{" "}
+        <Image
+          src="/emotion.png"
+          alt="emotion"
+          height={imgSize}
+          width={imgSize}
+        />{" "}
+        - GSAP{" "}
+        <Image
+          src="/gsap-icon.svg"
+          alt="gsap"
+          height={imgSize}
+          width={imgSize}
+        />
       </IconContainer>
     </TechList>
   );

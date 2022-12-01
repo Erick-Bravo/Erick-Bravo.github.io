@@ -4,7 +4,6 @@ import { breakpoints } from "../../../StyleTheme/theme";
 import Header from "../Header/Header";
 
 const SummaryContainer = styled(Box)({
-  boxSizing: "border-box",
   marginBottom: "40px",
   width: "100%",
 });
