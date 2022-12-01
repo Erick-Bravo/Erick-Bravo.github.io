@@ -7,7 +7,7 @@ import { SyntheticEvent, useState } from "react";
 import styled from "@emotion/styled";
 import { Link, List, ListItem, ListItemIcon } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Image from "next/image";
+import { TechLabelStyled, TechLogoStyled } from "./TechLogo.styles";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -130,13 +130,13 @@ const DynamicTabs = ({ tabData }: any) => {
                       }}
                       key={`${tech.logo} - ${i}`}
                     >
-                      <Image
+                      <TechLogoStyled
                         src={tech.logo}
                         alt={tech.text}
                         height="40"
                         width="40"
                       />
-                      <Box sx={{ fontSize: "12px", marginTop: "10px", fontWeight: 600}}>{tech.text}</Box>
+                      <TechLabelStyled>{tech.text}</TechLabelStyled>
                     </Box>
                   );
                 }
