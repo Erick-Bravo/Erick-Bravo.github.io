@@ -63,7 +63,6 @@ export const ProfileImage = styled(Image)({
 export const NameTypography = styled(Typography)({
    fontSize: "32px",
    marginBottom: "20px",
-   // fontFamily: "Concert One",
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
       fontSize: "45px"
    },

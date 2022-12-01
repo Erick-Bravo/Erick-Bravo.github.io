@@ -9,6 +9,7 @@ import {
 } from "./App.styles";
 import AllContent from "./components/ContentComponents/AllContent/AllContent";
 import Footer from "./components/Footer/Footer";
+import WeatherAPI from "./components/WeatherAPI/WeatherAPI";
 import PoweredBy from "./PoweredBy";
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           />
         </ImageContainer>
       </IntroContainer>
+      <WeatherAPI />
       <AllContent />
       <Footer />
     </PortfolioContainer>
