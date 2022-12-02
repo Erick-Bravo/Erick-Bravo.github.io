@@ -9,10 +9,10 @@ import {
 } from "./App.styles";
 import AllContent from "./components/ContentComponents/AllContent/AllContent";
 import Footer from "./components/Footer/Footer";
-import WeatherAPI from "./components/WeatherAPI/WeatherAPI";
+import WeatherAPI from "./components/WeatherAPI/Weather";
 import PoweredBy from "./PoweredBy";
 
-const App = () => {
+const App = ({yosemiteWeather}: any) => {
   return (
     <PortfolioContainer>
       <PoweredBy />
@@ -30,7 +30,7 @@ const App = () => {
           />
         </ImageContainer>
       </IntroContainer>
-      <WeatherAPI />
+      <WeatherAPI yosemiteWeather={yosemiteWeather} />
       <AllContent />
       <Footer />
     </PortfolioContainer>
