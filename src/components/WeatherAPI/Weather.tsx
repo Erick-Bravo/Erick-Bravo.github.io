@@ -12,7 +12,6 @@ const WeatherContainer = styled(Box)({
 
 
 const Weather = ({ yosemiteWeather }: any) => {
-  console.log(yosemiteWeather);
   return (
     <WeatherContainer>
       <Card
@@ -21,6 +20,7 @@ const Weather = ({ yosemiteWeather }: any) => {
         high={yosemiteWeather.main.temp_max}
         low={yosemiteWeather.main.temp_min}
         description={yosemiteWeather.weather[0].description}
+        icon={yosemiteWeather.weather[0].icon}
       />
     </WeatherContainer>
   );
