@@ -30,7 +30,7 @@ const Card = ({
 }: WeatherCardProps) => {
   return (
     <CardContainer>
-      <Box sx={{ fontWeight: 600 }}>{name}</Box>
+      <Box sx={{ fontWeight: 600, textOverflow: "ellipsis" }}>{name}</Box>
       <Box>{description}</Box>
       <Box
         sx={{

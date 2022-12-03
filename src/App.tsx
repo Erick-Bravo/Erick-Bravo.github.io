@@ -12,7 +12,7 @@ import Footer from "./components/Footer/Footer";
 import WeatherAPI from "./components/WeatherAPI/Weather";
 import PoweredBy from "./PoweredBy";
 
-const App = ({yosemiteWeather}: any) => {
+const App = ({ yosemiteWeather, boulderWeather }: any) => {
   return (
     <PortfolioContainer>
       <PoweredBy />
@@ -30,7 +30,10 @@ const App = ({yosemiteWeather}: any) => {
           />
         </ImageContainer>
       </IntroContainer>
-      <WeatherAPI yosemiteWeather={yosemiteWeather} />
+      <WeatherAPI
+        yosemiteWeather={yosemiteWeather}
+        boulderWeather={boulderWeather}
+      />
       <AllContent />
       <Footer />
     </PortfolioContainer>
