@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 import Image from "next/image";
 import { breakpoints } from "./StyleTheme/theme";
 
@@ -42,6 +42,36 @@ export const NameAndTitleContainer = styled(Box)({
    color: "white"
 });
 
+export const NameTypography = styled(Typography)({
+   fontSize: "32px",
+   marginBottom: "20px",
+   [`@media(min-width: ${breakpoints.tablet}px)`]: {
+      fontSize: "45px"
+   },
+});
+
+export const TitleTypography = styled(Typography)({
+   fontSize: "12.5px",
+   opacity: .7,
+   [`@media(min-width: ${breakpoints.tablet}px)`]: {
+      fontSize: "25px"
+   },
+});
+
+export const ResumeLink = styled(Link)({
+   fontSize: "10px",
+   marginTop: "5px",
+   color: "white",
+   opacity: .7,
+   ":hover": {
+      opacity: 1
+   },
+   [`@media(min-width: ${breakpoints.tablet}px)`]: {
+      marginTop: "10px",
+      fontSize: "15px"
+   },
+});
+
 export const ImageContainer = styled(Box)({
    display: "flex",
    justifyContent: "center",
@@ -60,18 +90,3 @@ export const ProfileImage = styled(Image)({
    },
 })
 
-export const NameTypography = styled(Typography)({
-   fontSize: "32px",
-   marginBottom: "20px",
-   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-      fontSize: "45px"
-   },
-});
-
-export const TitleTypography = styled(Typography)({
-   fontSize: "12.5px",
-   opacity: .7,
-   [`@media(min-width: ${breakpoints.tablet}px)`]: {
-      fontSize: "25px"
-   },
-});

@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import {
   ImageContainer,
   IntroContainer,
@@ -5,6 +6,7 @@ import {
   NameTypography,
   PortfolioContainer,
   ProfileImage,
+  ResumeLink,
   TitleTypography,
 } from "./App.styles";
 import AllContent from "./components/ContentComponents/AllContent/AllContent";
@@ -19,6 +21,13 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
         <NameAndTitleContainer>
           <NameTypography>Erick Bravo</NameTypography>
           <TitleTypography>Software Developer</TitleTypography>
+          <ResumeLink
+            href="/ErickBravoResume.pdf"
+            target={"_blank"}
+            rel="noopener noreferrer"
+          >
+          {"--> View Resume <--"}
+          </ResumeLink>
         </NameAndTitleContainer>
         <ImageContainer>
           <ProfileImage
