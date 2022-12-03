@@ -11,7 +11,7 @@ type ExternalLinkProps = {
 const ImageStyled = styled("img")({
   height: "40px",
   ":hover": {
-    filter: "drop-shadow(2px 2px 2px black)",
+    // filter: "drop-shadow(2px 2px 2px black)",
   },
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     height: "50px",

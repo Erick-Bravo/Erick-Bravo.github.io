@@ -8,14 +8,13 @@ import {
   TitleTypography,
 } from "./App.styles";
 import AllContent from "./components/ContentComponents/AllContent/AllContent";
-import Footer from "./components/Footer/Footer";
+import SocialSites from "./components/SocialSites/SocialSites";
 import WeatherAPI from "./components/WeatherAPI/Weather";
 import PoweredBy from "./PoweredBy";
 
 const App = ({ yosemiteWeather, boulderWeather }: any) => {
   return (
     <PortfolioContainer>
-      <PoweredBy />
       <IntroContainer>
         <NameAndTitleContainer>
           <NameTypography>Erick Bravo</NameTypography>
@@ -28,6 +27,7 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
             height="140"
             width="140"
           />
+          <SocialSites />
         </ImageContainer>
       </IntroContainer>
       <WeatherAPI
@@ -35,7 +35,7 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
         boulderWeather={boulderWeather}
       />
       <AllContent />
-      <Footer />
+      <PoweredBy />
     </PortfolioContainer>
   );
 };

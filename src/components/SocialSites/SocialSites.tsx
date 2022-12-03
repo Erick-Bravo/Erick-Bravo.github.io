@@ -3,44 +3,43 @@ import { Box } from "@mui/material";
 import { breakpoints } from "../../StyleTheme/theme";
 import ExternalLink from "./ExternalLink";
 
-export const FooterStyled = styled(Box)({
+export const SocialStyled = styled(Box)({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  height: "50px",
-  width: "100%",
+  flexDirection: "column",
   maxWidth: "450px",
   padding: "0 40px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     padding: "0 0",
-    margin: "10px 0",
+    marginLeft: "20px",
   },
-  [`@media(min-width: ${breakpoints.desktop}px)`]: {
-    margin: "20px 0",
-  },
+  // [`@media(min-width: ${breakpoints.desktop}px)`]: {
+  //   marginLeft: "20px",
+  // },
 });
 
 
-const Footer = () => {
+const SocialSites = () => {
   return (
-    <FooterStyled>
+    <SocialStyled>
       <ExternalLink
         href="https://www.linkedin.com/in/erick-bravo-448234203/"
-        imgSrc="./Linkedin2.svg"
+        imgSrc="./linkedin-clouds.svg"
         alt="linkedin"
       />
       <ExternalLink
         href="https://github.com/Erick-Bravo"
-        imgSrc="./github2.png"
+        imgSrc="./github-clouds.svg"
         alt="github"
       />
       <ExternalLink
         href="https://www.instagram.com/erickovarb/?hl=en"
-        imgSrc="./instagram2.svg"
+        imgSrc="./instagram-clouds.svg"
         alt="instagram"
       />
-    </FooterStyled>
+    </SocialStyled>
   );
 };
 
-export default Footer;
+export default SocialSites;

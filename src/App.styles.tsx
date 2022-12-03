@@ -30,7 +30,7 @@ export const IntroContainer = styled(Box)({
       justifyContent: "space-between",
       flexDirection: "row",
       width: "700px",
-      padding: "20px 90px 0 90px",
+      // padding: "20px 90px 0 90px",
     },
 })
 
