@@ -20,7 +20,7 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
       <IntroContainer>
         <NameAndTitleContainer>
           <NameTypography>Erick Bravo</NameTypography>
-          <TitleTypography>Software Developer</TitleTypography>
+          <TitleTypography>Application Developer</TitleTypography>
           <ResumeLink
             href="/ErickBravoResume.pdf"
             target={"_blank"}

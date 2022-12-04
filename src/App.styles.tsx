@@ -60,14 +60,14 @@ export const TitleTypography = styled(Typography)({
 
 export const ResumeLink = styled(Link)({
    fontSize: "10px",
-   marginTop: "5px",
+   marginTop: "10px",
    color: "white",
    opacity: .7,
    ":hover": {
       opacity: 1
    },
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
-      marginTop: "10px",
+      marginTop: "20px",
       fontSize: "15px"
    },
 });
