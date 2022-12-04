@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Link } from "@mui/material";
-import { breakpoints } from "../../StyleTheme/theme";
+import { breakpoints } from "../../../StyleTheme/theme";
 
 type ExternalLinkProps = {
   href: string;

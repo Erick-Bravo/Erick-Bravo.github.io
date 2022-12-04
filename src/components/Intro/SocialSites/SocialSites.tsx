@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
-import { breakpoints } from "../../StyleTheme/theme";
+import { breakpoints } from "../../../StyleTheme/theme";
 import ExternalLink from "./ExternalLink";
 
 export const SocialStyled = styled(Box)({
@@ -18,7 +18,6 @@ export const SocialStyled = styled(Box)({
   //   marginLeft: "20px",
   // },
 });
-
 
 const SocialSites = () => {
   return (
