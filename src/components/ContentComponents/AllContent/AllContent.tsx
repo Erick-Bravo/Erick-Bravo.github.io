@@ -22,7 +22,10 @@ export const ContentContainer = styled(Box)({
 });
 
 const InnerContent = styled(Box)({
-  padding: "40px 50px",
+  padding: "20px 25px",
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+    padding: "40px 50px",
+  },
 });
 
 const AllContent = () => {
