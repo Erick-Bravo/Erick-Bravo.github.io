@@ -2,7 +2,15 @@ import styled from "@emotion/styled";
 import { Box, Button, Link } from "@mui/material";
 import { breakpoints } from "../../StyleTheme/theme";
 
-export const NavBarContainer = styled(Box)({
+const preventDomList = (prop: string | number | symbol) =>
+  prop !== "label" &&
+  prop !== "usersCurrentAnswer" &&
+  prop !== "light" &&
+  prop !== "dark";
+
+export const NavBarContainer = styled(Box, {
+    shouldForwardProp: (prop) => preventDomList(prop),
+  })({
     visibility: "hidden",
     height: 0,
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
@@ -36,3 +44,39 @@ export const ButtonStyled = styled(Button)({
     background: "#84CFE2",
   },
 });
+
+
+// export const AnswerStyled = styled(Button, {
+//   shouldForwardProp: (prop) => preventDomList(prop),
+// })<AnswerStyledProps>((props) => ({
+//   ...generalButtonStyles,
+//   width: "100%",
+//   maxWidth: maxWidths.mobile.buttons,
+//   margin: "8px 0",
+//   color:
+//     props.usersCurrentAnswer === props.label ? color.white : color.teal.one,
+//   border:
+//     props.usersCurrentAnswer === props.label
+//       ? "0"
+//       : `2px solid ${color.teal.two}`,
+//   backgroundColor:
+//     props.usersCurrentAnswer === props.label ? color.teal.one : color.white,
+//   ":hover": {
+//     backgroundColor:
+//       props.usersCurrentAnswer === props.label
+//         ? color.teal.one
+//         : color.teal.four,
+//     border:
+//       props.usersCurrentAnswer === props.label
+//         ? "0"
+//         : `2px solid ${color.teal.two}`,
+//   },
+//   [`@media(min-width: ${breakpoints.tablet}px)`]: {
+//     maxWidth: maxWidths.tablet.buttons,
+//     margin: "12px 0",
+//   },
+//   [`@media(min-width: ${breakpoints.desktop}px)`]: {
+//     maxWidth: maxWidths.desktop.buttons,
+//     margin: "16px 0",
+//   },
+// }));
