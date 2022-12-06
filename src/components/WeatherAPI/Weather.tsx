@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 import { Box, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import { currentWeatherCall } from "./weatherAPIs";
+import { currentWeatherCall } from "./WeatherAPIs";
+
 
 const WeatherContainer = styled(Box)({
   display: "flex",
