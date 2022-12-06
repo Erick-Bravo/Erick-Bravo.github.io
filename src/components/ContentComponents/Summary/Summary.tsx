@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 import { breakpoints } from "../../../StyleTheme/theme";
+import { SummaryAnchor } from "../../Navbar/NavBar.styles";
 import Header from "../Header/Header";
 
 const SummaryContainer = styled(Box)({
@@ -31,6 +32,7 @@ const Testimonial = styled(Typography)({
 const Summary = () => {
   return (
     <SummaryContainer>
+      <SummaryAnchor id="Summary"/>
       <Header text="Summary" />
       <Paragraph paragraph>
         Hello! My name is Erick Bravo and I am a self-motivated and enthusiastic

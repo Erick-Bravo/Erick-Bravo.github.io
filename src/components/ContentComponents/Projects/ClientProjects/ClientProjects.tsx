@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 import DynamicTabs from "../../../DynamicTabs/DynamicTabs";
+import { ProjectsAnchor } from "../../../Navbar/NavBar.styles";
 import Header from "../../Header/Header";
 
 const ListBFDI = [
@@ -89,6 +90,7 @@ const ClientProjectsContainer = styled(Box)({
 const ClientProjects = () => {
   return (
     <ClientProjectsContainer>
+      <ProjectsAnchor id="Projects"/>
       <Header text="Client Projects" />
       <DynamicTabs tabData={tabData} />
     </ClientProjectsContainer>

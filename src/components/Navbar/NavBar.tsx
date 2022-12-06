@@ -3,13 +3,13 @@ import { ButtonStyled, NavBarContainer, NavLink } from "./NavBar.styles";
 const NavBar = () => {
   return (
     <NavBarContainer>
-      <NavLink>
+      <NavLink href="#Summary">
         <ButtonStyled>Summary</ButtonStyled>
       </NavLink>
-      <NavLink>
+      <NavLink href="#Projects">
         <ButtonStyled>Projects</ButtonStyled>
       </NavLink>
-      <NavLink>
+      <NavLink href="#Contact">
         <ButtonStyled>Contact</ButtonStyled>
       </NavLink>
     </NavBarContainer>

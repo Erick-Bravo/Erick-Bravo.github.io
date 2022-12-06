@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Box, Link, Typography } from "@mui/material";
+import { ContactAnchor } from "../../Navbar/NavBar.styles";
 import Header from "../Header/Header";
 
 const ContactContainer = styled(Box)({
@@ -17,6 +18,7 @@ const InfoContainer = styled(Box)({
 const Contact = () => {
   return (
     <ContactContainer>
+      <ContactAnchor id="Contact"/>
       <Header text="Contact" />
       <InfoContainer>
         <Typography>

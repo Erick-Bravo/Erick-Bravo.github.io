@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
-import { Box, Button, Link } from "@mui/material";
+import { Box, Button } from "@mui/material";
+import Link from "next/link";
 import { breakpoints } from "../../StyleTheme/theme";
 
 const preventDomList = (prop: string | number | symbol) =>
@@ -12,6 +13,9 @@ export const NavBarContainer = styled(Box, {
     shouldForwardProp: (prop) => preventDomList(prop),
   })({
     visibility: "hidden",
+    position: "sticky",
+    zIndex: 10,
+    top: 0,
     height: 0,
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     visibility: "visible",
@@ -25,7 +29,7 @@ export const NavBarContainer = styled(Box, {
     padding: "0 40px",
   },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {
-    padding: "0 150px"
+    padding: "0 150px",
   },
 });
 
@@ -44,6 +48,27 @@ export const ButtonStyled = styled(Button)({
     background: "#84CFE2",
   },
 });
+
+export const SummaryAnchor = styled(Box)({
+  display: "block",
+  position: "relative",
+  top: "-270px",
+  visibility: "hidden"
+})
+
+export const ProjectsAnchor = styled(Box)({
+  display: "block",
+  position: "relative",
+  top: "-120px",
+  visibility: "hidden"
+})
+
+export const ContactAnchor = styled(Box)({
+  display: "block",
+  position: "relative",
+  top: "-50px",
+  visibility: "hidden"
+})
 
 
 // export const AnswerStyled = styled(Button, {
