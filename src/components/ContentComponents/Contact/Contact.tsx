@@ -9,7 +9,7 @@ const ContactContainer = styled(Box)({
 
 const InfoContainer = styled(Box)({
   display: "flex",
-  justifyContent: "center",
+  justifyContent: "flex-start",
   alignItems: "center",
   flexDirection: "column",
   marginTop: "30px",
@@ -27,7 +27,7 @@ const Contact = () => {
             erickbravo120@gmail.com
           </Link>
         </Typography>
-        <Typography>phone: (909) 354-6272</Typography>
+        <Typography>Phone: (909) 354-6272</Typography>
       </InfoContainer>
     </ContactContainer>
   );
