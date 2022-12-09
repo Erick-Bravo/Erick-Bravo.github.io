@@ -8,7 +8,8 @@ const nextConfig = {
     domains: [
       `raw.githubusercontent.com`,
       `www.pngfind.com`,
-      `openweathermap.org`
+      `openweathermap.org`,
+      `emoji.slack-edge.com`
     ],
   },
 };
