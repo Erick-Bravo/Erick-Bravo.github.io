@@ -24,6 +24,7 @@ interface TabDataProps {
     text: string;
   }[];
   responsibilities?: string[];
+  videoLink?: string;
   website: {
     label: string;
     link: string;
@@ -161,6 +162,11 @@ const DynamicTabs = ({ tabData }: any) => {
                   );
                 })}
               </>
+            )}
+            {data.videoLink && (
+              <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "100px"}}>
+                <video src={data.videoLink} autoPlay loop muted height="550px" />
+              </Box>
             )}
           </TabPanelContainer>
         </TabPanel>
