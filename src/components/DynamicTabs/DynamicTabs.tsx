@@ -93,22 +93,6 @@ const DynamicTabs = ({ tabData }: any) => {
               {data.description}
             </Typography>
 
-            <Typography sx={{ marginBottom: "20px" }}>
-              Website:{" "}
-              {data.website.link ? (
-                <Link
-                  href={data.website.link}
-                  sx={{ fontSize: "15px" }}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {data.website.label}
-                </Link>
-              ) : (
-                "Hosting Soon"
-              )}
-            </Typography>
-
             <Box
               sx={{
                 display: "flex",
@@ -163,9 +147,37 @@ const DynamicTabs = ({ tabData }: any) => {
                 })}
               </>
             )}
+            <Typography sx={{ marginTop: "60px" }}>
+              Website:{" "}
+              {data.website.link ? (
+                <Link
+                  href={data.website.link}
+                  sx={{ fontSize: "15px" }}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {data.website.label}
+                </Link>
+              ) : (
+                "Hosting Soon"
+              )}
+            </Typography>
             {data.videoLink && (
-              <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "100px"}}>
-                <video src={data.videoLink} autoPlay loop muted height="550px" />
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "60px",
+                }}
+              >
+                <video
+                  src={data.videoLink}
+                  autoPlay
+                  loop
+                  muted
+                  height="550px"
+                />
               </Box>
             )}
           </TabPanelContainer>
