@@ -19,14 +19,23 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
 
   useEffect(() => {
     if (!open) {
-      const title = document.getElementById("name")!;
-      const myText = new SplitType(title)
-      gsap.to(".char", {
+      const name = document.getElementById("name")!;
+      const title = document.getElementById("title")!;
+      const splitName = new SplitType(name, {charClass: "namechar"})
+      const splitTitle = new SplitType(title, {charClass: "titlechar"})
+      gsap.to(".namechar", {
         y: 0,
         opacity: 1,
         duration: 1,
         stagger: 0.05,
         delay: 0.2,
+      });
+      gsap.to(".titlechar", {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.05,
+        delay: 0.6,
       });
     }
   }, [open])

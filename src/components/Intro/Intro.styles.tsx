@@ -45,13 +45,16 @@ export const NameTypography = styled(Typography, {
   },
 }));
 
-export const TitleTypography = styled(Typography)({
+export const TitleTypography = styled(Typography, {
+  shouldForwardProp: (prop) => preventDomList(prop),
+})<NameStyledProps>((props) => ({
+  visibility: props.open ? "hidden" : "visible",
   fontSize: "12.5px",
   opacity: 0.7,
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     fontSize: "25px",
   },
-});
+}));
 
 export const ResumeLink = styled(Link)({
   fontSize: "10px",

@@ -17,14 +17,15 @@ a {
   scroll-behavior: smooth;
 }
 
-#name {
+#name, #title {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.char {
+.namechar, .titlechar {
   transform: translateY(-115px);
   transition: transform 0.5s;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {
