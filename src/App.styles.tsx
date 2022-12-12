@@ -9,7 +9,7 @@ export const PortfolioContainer = styled(Box)({
    flexDirection: "column",
    height: "100%",
    // width: "calc(100vw - 15px)",
-   overflow: "hidden",
+   // overflow: "hidden",
    padding: "10px",
    margin: 0,
    // backgroundImage: "linear-gradient(#235347, #D56172)",

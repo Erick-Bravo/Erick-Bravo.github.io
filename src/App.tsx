@@ -28,14 +28,14 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
         opacity: 1,
         duration: 1,
         stagger: 0.05,
-        delay: 0.2,
+        delay: 0.1,
       });
       gsap.to(".titlechar", {
         y: 0,
         opacity: 1,
         duration: 1,
         stagger: 0.05,
-        delay: 0.6,
+        delay: 0.5,
       });
     }
   }, [open])
