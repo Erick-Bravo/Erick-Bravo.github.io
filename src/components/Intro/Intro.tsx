@@ -8,12 +8,28 @@ import {
   ResumeLink,
   TitleTypography,
 } from "./Intro.styles";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import SplitType from 'split-type'
+
+
 
 const Intro = () => {
+  useEffect(() => {
+    const title = document.getElementById("name")!;
+    const myText = new SplitType(title)
+    gsap.to(".char", {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      stagger: 0.05,
+      delay: 0.2,
+    });
+  })
   return (
     <IntroContainer>
       <NameAndTitleContainer>
-        <NameTypography>Erick Bravo</NameTypography>
+        <NameTypography id="name">ERICK BRAVO</NameTypography>
         <TitleTypography>Application Developer</TitleTypography>
         <ResumeLink
           href="/ErickBravoResume.pdf"

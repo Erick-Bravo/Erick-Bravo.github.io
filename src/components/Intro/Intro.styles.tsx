@@ -15,7 +15,7 @@ export const IntroContainer = styled(Box)({
        display: "flex",
        justifyContent: "space-between",
        flexDirection: "row",
-       width: "700px",
+       width: "800px",
        // padding: "20px 90px 0 90px",
      },
  })
