@@ -1,5 +1,4 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -8,9 +7,7 @@ import ListItemText from "@mui/material/ListItemText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import CancelIcon from "@mui/icons-material/Cancel";
-import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import { useState } from "react";
 import { Box } from "@mui/system";
 import { color } from "../../StyleTheme/theme";
 
@@ -38,7 +35,9 @@ const SimpleDialog = (props: SimpleDialogProps) => {
       <DialogTitle sx={{ fontSize: "16px" }}>
         This site uses the Openweatherapp API for your local weather data.
       </DialogTitle>
-      <Box sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+      <Box
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      >
         <DialogTitle sx={{ fontSize: "16px", padding: "0 20px" }}>
           Thanks for visiting!
         </DialogTitle>
@@ -65,13 +64,13 @@ const SimpleDialog = (props: SimpleDialogProps) => {
   );
 };
 
-const Modal = () => {
-  const [open, setOpen] = useState(true);
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
+const Modal = ({
+  open,
+  handleClose,
+}: {
+  open: boolean;
+  handleClose: () => void;
+}) => {
   return (
     <Box>
       <SimpleDialog open={open} onClose={handleClose} />
