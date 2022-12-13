@@ -16,7 +16,7 @@ export const NavBarContainer = styled(Box)({
     justifyContent: "space-around",
     alignItems: "center",
     height: "80px",
-    backgroundColor: "#4B98AB",
+    backgroundColor: "#3e8b9e",
     width: "100%",
     padding: "0 40px",
   },
