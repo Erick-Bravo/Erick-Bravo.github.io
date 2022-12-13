@@ -26,6 +26,17 @@ a {
   transition: transform 0.5s;
 }
 
+#profile_image {
+  opacity: 0;
+  transform: translateX(115px);
+}
+
+#resume {
+  opacity: 0;
+}
+
+
+
 
 @media (prefers-color-scheme: dark) {
   html {

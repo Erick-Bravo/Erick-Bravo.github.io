@@ -7,6 +7,7 @@ import ListItemText from "@mui/material/ListItemText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import CancelIcon from "@mui/icons-material/Cancel";
+import RocketIcon from '@mui/icons-material/Rocket';
 import Image from "next/image";
 import { Box } from "@mui/system";
 import { color } from "../../StyleTheme/theme";
@@ -51,13 +52,13 @@ const SimpleDialog = (props: SimpleDialogProps) => {
         />
       </Box>
       <List sx={{ pt: 0 }}>
-        <ListItem autoFocus button onClick={() => handleListItemClick("Close")}>
-          <ListItemAvatar>
+        <ListItem autoFocus button onClick={() => handleListItemClick("View Portfolio")}>
+          <ListItemAvatar sx={{dispaly: "flex", justifyContent: "space-around"}}>
             <Avatar>
-              <CancelIcon />
+              <RocketIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Close" />
+          <ListItemText primary="View Portfolio" />
         </ListItem>
       </List>
     </Dialog>

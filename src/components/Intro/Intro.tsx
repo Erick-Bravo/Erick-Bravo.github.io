@@ -8,9 +8,29 @@ import {
   ResumeLink,
   TitleTypography,
 } from "./Intro.styles";
+import { useEffect } from "react";
+import { gsap } from "gsap";
 
 
 const Intro = ({open}: {open: boolean}) => {
+
+  useEffect(() => {
+    if(!open) {
+      gsap.to("#profile_image", {
+        x: 0,
+        opacity: 1,
+        duration: 1.8,
+        delay: 0,
+        ease: "back",
+        rotate: "-360"
+      })
+      gsap.to("#resume", {
+        opacity: .8,
+        duration: 3,
+        delay: 3.5
+      })
+    }
+  }, [open])
 
   return (
     <IntroContainer>
@@ -21,6 +41,7 @@ const Intro = ({open}: {open: boolean}) => {
           href="/ErickBravoResume.pdf"
           target={"_blank"}
           rel="noopener noreferrer"
+          id="resume"
         >
           {"--> View Resume <--"}
         </ResumeLink>
@@ -31,6 +52,7 @@ const Intro = ({open}: {open: boolean}) => {
           alt="Profile Pic"
           height="140"
           width="140"
+          id="profile_image"
         />
         <SocialSites />
       </ImageContainer>
