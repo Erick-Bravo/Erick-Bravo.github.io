@@ -24,7 +24,7 @@ const tabData = [
     label: "Parts House",
     title: "Parts House 2.0",
     description:
-      "Revamped from an earlier primitive version, Parts House aims to allow a user to keep track various utilities and belongings in their home. Users can save item info and set notifications to re-purchase with the proper purchase link.",
+      "Revamped from an earlier primitive version, Parts House aims to allow a user to keep track of various utilities and belongings in their home. Users can save item info and set notifications to re-purchase with the proper purchase link.",
     tech: techPartsHouse,
     website: {
       label: "Parts House 2.0",
