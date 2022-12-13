@@ -14,7 +14,7 @@ export const PortfolioContainer = styled(Box)({
    margin: 0,
    // backgroundImage: "linear-gradient(#235347, #D56172)",
    //https://cssgradient.io/
-   background: "linear-gradient(216deg, rgba(12,85,65,1) 1%, rgba(50,143,137,1) 100%);",
+   background: "linear-gradient(216deg, rgba(14,102,78,1) 17%, rgba(29,32,32,1) 91%)",
    [`@media(min-width: ${breakpoints.tablet}px)`]: {
       padding: "25px"
    },
