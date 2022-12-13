@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
-import { Box, CircularProgress } from "@mui/material";
+import { Box, CircularProgress, Button } from "@mui/material";
 import { useEffect, useState } from "react";
-import Card from "./Card";
-import { currentWeatherCall } from "./WeatherAPIs";
 
+import Card from "./Card";
+import { ButtonStyled } from "./Weather.styles";
+import { currentWeatherCall } from "./WeatherAPIs";
 
 const WeatherContainer = styled(Box)({
   display: "flex",
@@ -22,9 +23,14 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
   const [currentWeather, setCurrentWeather] = useState<any>(false);
   const [errorStatus, setErrorStatus] = useState(false);
   const [geoTurnedOff, setGeoTurnedOff] = useState(false);
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  const getLocalWeather = () => {
+      setButtonClicked(true);
+  };
 
   useEffect(() => {
-    if ("geolocation" in navigator) {
+    if ("geolocation" in navigator && buttonClicked) {
       const success = (position: any) => {
         setUserLocation({
           lat: position.coords.latitude,
@@ -43,7 +49,8 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
       };
       navigator.geolocation.getCurrentPosition(success, error);
     }
-  }, [userLocation.lat, userLocation.lon]);
+  }, [userLocation.lat, userLocation.lon, buttonClicked]);
+
   return (
     <WeatherContainer>
       <Card
@@ -74,15 +81,22 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
           />
         )}
         {!currentWeather && !geoTurnedOff && (
-          <CircularProgress color="primary" />
+          <>
+            {buttonClicked ? (
+              <CircularProgress color="primary" />
+            ) : (
+              <ButtonStyled onClick={getLocalWeather}>
+                see your weather
+              </ButtonStyled>
+            )}
+          </>
         )}
         {geoTurnedOff && (
-          <Box sx={{ color: "white", marginTop: "25px" }}>
+          <Box sx={{ color: "white", marginTop: "25px", fontWeight: 600 }}>
             geolocation is off
           </Box>
         )}
       </Box>
-      {/* //   <Box sx={{ color: "orange", fontSize: "12px"}}>Please turn on geolocation</Box> */}
     </WeatherContainer>
   );
 };
