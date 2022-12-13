@@ -26,8 +26,8 @@ const Intro = ({open}: {open: boolean}) => {
       })
       gsap.to("#resume", {
         opacity: .8,
-        duration: 3,
-        delay: 3.5
+        duration: 2,
+        delay: 3
       })
     }
   }, [open])
@@ -54,7 +54,7 @@ const Intro = ({open}: {open: boolean}) => {
           width="140"
           id="profile_image"
         />
-        <SocialSites />
+        <SocialSites open={open} />
       </ImageContainer>
     </IntroContainer>
   );

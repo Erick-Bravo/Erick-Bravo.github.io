@@ -31,11 +31,14 @@ a {
   transform: translateX(115px);
 }
 
+#social {
+  opacity: 0;
+  transform: translateX(115px);
+}
+
 #resume {
   opacity: 0;
 }
-
-
 
 
 @media (prefers-color-scheme: dark) {
