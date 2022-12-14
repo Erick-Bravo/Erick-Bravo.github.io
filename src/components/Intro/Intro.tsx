@@ -48,7 +48,7 @@ const Intro = ({open}: {open: boolean}) => {
       </NameAndTitleContainer>
       <ImageContainer>
         <ProfileImage
-          src="/Baldy-modified.png"
+          src="/profile.png"
           alt="Profile Pic"
           height="140"
           width="140"
