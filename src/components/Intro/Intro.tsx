@@ -19,7 +19,7 @@ const Intro = ({open}: {open: boolean}) => {
       gsap.to("#profile_image", {
         x: 0,
         opacity: 1,
-        duration: 1.8,
+        duration: 2,
         delay: 0,
         ease: "back",
         rotate: "-360"
