@@ -15,8 +15,10 @@ export const IntroContainer = styled(Box)({
     display: "flex",
     justifyContent: "space-between",
     flexDirection: "row",
+    width: "700px",
+  },
+  [`@media(min-width: ${breakpoints.desktop}px)`]: {
     width: "800px",
-    // padding: "20px 90px 0 90px",
   },
 });
 
@@ -74,16 +76,18 @@ export const ImageContainer = styled(Box)({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  marginTop: "30px",
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+      marginTop: 0
+  },
 });
 
 export const ProfileImage = styled(Image)({
   filter: "drop-shadow(3px 3px 3px black)",
   height: "140px",
   width: "140px",
-  marginTop: "40px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     height: "200px",
     width: "200px",
-    marginTop: 0,
   },
 });

@@ -11,7 +11,7 @@ export const SocialStyled = styled(Box)({
   alignItems: "center",
   flexDirection: "column",
   maxWidth: "450px",
-  padding: "0 40px",
+  paddingLeft: "40px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     padding: "0 0",
     marginLeft: "20px",
