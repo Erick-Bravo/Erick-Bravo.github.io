@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const withVideos = require('next-videos')
 const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   reactStrictMode: true,
@@ -12,7 +11,6 @@ module.exports = {
       `openweathermap.org`,
       `emoji.slack-edge.com`
     ],
-  },
-  withVideos: withVideos()
+  }
 };
 

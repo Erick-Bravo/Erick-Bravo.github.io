@@ -1,18 +1,9 @@
-import styled from "@emotion/styled";
-import { Box, CircularProgress, Button } from "@mui/material";
+import { Box, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 
 import Card from "./Card";
-import { ButtonStyled } from "./Weather.styles";
+import { ButtonStyled, WeatherContainer } from "./Weather.styles";
 import { currentWeatherCall } from "./WeatherAPIs";
-
-const WeatherContainer = styled(Box)({
-  display: "flex",
-  justifyContent: "space-around",
-  width: "800px",
-  alignItems: "center",
-  marginBottom: "40px",
-});
 
 const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
   const [userLocation, setUserLocation] = useState<any>({
