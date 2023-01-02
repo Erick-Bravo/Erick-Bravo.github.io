@@ -6,7 +6,6 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
-import CancelIcon from "@mui/icons-material/Cancel";
 import RocketIcon from '@mui/icons-material/Rocket';
 import Image from "next/image";
 import { Box } from "@mui/system";
@@ -34,13 +33,13 @@ const SimpleDialog = (props: SimpleDialogProps) => {
         Welcome to my Portfolio!
       </DialogTitle>
       <DialogTitle sx={{ fontSize: "16px" }}>
-        This site uses the Openweatherapp API for your local weather data.
+        This portfolio is undergoing a complete revamp for job hunt 2023.
       </DialogTitle>
       <Box
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "20px" }}
       >
         <DialogTitle sx={{ fontSize: "16px", padding: "0 20px" }}>
-          Thanks for visiting!
+        Feel free to check out what is already available!
         </DialogTitle>
         <Image
           src={
