@@ -8,7 +8,7 @@ export const WeatherContainer = styled(Box)({
     [`@media(min-width: ${breakpoints.tablet}px)`]: {
         flexDirection: "row",
         justifyContent: "space-around",
-        width: "800px",
+        width: "700px",
         alignItems: "center",
         marginBottom: "40px",
      },
