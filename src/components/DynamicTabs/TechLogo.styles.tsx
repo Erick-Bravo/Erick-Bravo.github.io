@@ -2,9 +2,22 @@ import { Box, styled } from "@mui/system";
 import Image from "next/image";
 import { breakpoints } from "../../StyleTheme/theme";
 
+
+export const TechLogoContainer = styled(Box)({
+  display: "flex",
+  width: "100%",
+  justifyContent: "center",
+  alignItems: "center",
+  margin: "20px 0 40px 0",
+})
+
 export const TechLogoStyled = styled(Image)({
-  height: "35px",
-  width: "35px",
+  height: "25px",
+  width: "25px",
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+    height: "35px",
+    width: "35px",
+  },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {
     height: "40px",
     width: "40px",

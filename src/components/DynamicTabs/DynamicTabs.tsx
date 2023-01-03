@@ -100,6 +100,7 @@ const DynamicTabs = ({ tabData }: any) => {
                 justifyContent: "center",
                 alignItems: "center",
                 margin: "20px 0 40px 0",
+                flexWrap: "wrap"
               }}
             >
               {data.tech.map(
@@ -110,7 +111,7 @@ const DynamicTabs = ({ tabData }: any) => {
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
-                        margin: "0 15px",
+                        margin: "20px 15px",
                         position: "relative",
                       }}
                       key={`${tech.logo} - ${i}`}
