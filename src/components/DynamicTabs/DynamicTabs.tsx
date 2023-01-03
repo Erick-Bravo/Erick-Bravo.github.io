@@ -2,7 +2,7 @@ import * as React from "react";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { ListStyled, TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
+import { ListStyled, TabChildContainer, TabHRStyled, TabsStyled, VideoStyled } from "./DynamicTabs.styled";
 import { SyntheticEvent, useState } from "react";
 import styled from "@emotion/styled";
 import { Link, ListItem, ListItemIcon } from "@mui/material";
@@ -43,9 +43,9 @@ const TabPanel = (props: TabPanelProps) => {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <TabChildContainer>
           <Box>{children}</Box>
-        </Box>
+        </TabChildContainer>
       )}
     </div>
   );
@@ -172,12 +172,11 @@ const DynamicTabs = ({ tabData }: any) => {
                   marginTop: "60px",
                 }}
               >
-                <video
+                <VideoStyled
                   src={data.videoLink}
                   autoPlay
                   loop
                   muted
-                  height="550px"
                 />
               </Box>
             )}

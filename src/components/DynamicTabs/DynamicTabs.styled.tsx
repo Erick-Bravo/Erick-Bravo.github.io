@@ -31,6 +31,12 @@ export const TabsStyled = styled(Tabs)({
   },
 });
 
+export const TabChildContainer = styled(Box)({
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+    p: 3,
+  },
+});
+
 export const TabHRStyled = styled("hr")({
   margin: 0,
   padding: 0,
@@ -49,3 +55,16 @@ export const ListStyled = styled(List)({
     fontSize: "16px",
   },
 });
+
+export const VideoStyled = styled("video")({
+  [`@media(max-width: 510px)`]: {
+    width: "100%"
+  },
+  width: "400px",
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+    width: "450px"
+  },
+  [`@media(min-width: ${breakpoints.desktop}px)`]: {
+    width: "550px"
+  },
+})
