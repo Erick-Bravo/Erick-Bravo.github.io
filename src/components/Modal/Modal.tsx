@@ -6,10 +6,11 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
-import RocketIcon from '@mui/icons-material/Rocket';
+import RocketIcon from "@mui/icons-material/Rocket";
 import Image from "next/image";
 import { Box } from "@mui/system";
 import { color } from "../../StyleTheme/theme";
+import { DialogTitleStyled, EmojiContainer, NoteStyled } from "./Modal.styles";
 
 export interface SimpleDialogProps {
   open: boolean;
@@ -29,30 +30,32 @@ const SimpleDialog = (props: SimpleDialogProps) => {
 
   return (
     <Dialog onClose={handleClose} open={open}>
-      <DialogTitle sx={{ backgroundColor: color.gray.one, color: "white" }}>
+      <DialogTitle sx={{ backgroundColor: color.gray.one, color: "white", marginBottom: "15px" }}>
         Welcome to my Portfolio!
       </DialogTitle>
-      <DialogTitle sx={{ fontSize: "16px" }}>
+      <DialogTitleStyled>
         This portfolio is undergoing a complete revamp for job hunt 2023.
-      </DialogTitle>
-      <Box
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "20px" }}
-      >
-        <DialogTitle sx={{ fontSize: "16px", padding: "0 20px" }}>
-        Feel free to check out what is already available!
-        </DialogTitle>
-        <Image
-          src={
-            "https://emoji.slack-edge.com/T0253TWF5/meow_wave/845a99cb3729ed1c.gif"
-          }
-          alt={"meow-wave"}
-          width={"40"}
-          height={"40"}
-        />
-      </Box>
+      </DialogTitleStyled>
+      <NoteStyled>
+        <DialogTitleStyled>
+          Feel free to check out what is already available!
+        </DialogTitleStyled>
+        <EmojiContainer>
+          <Image
+            src={
+              "https://emoji.slack-edge.com/T0253TWF5/meow_wave/845a99cb3729ed1c.gif"
+            }
+            alt={"meow-wave"}
+            width={"40"}
+            height={"40"}
+          />
+        </EmojiContainer>
+      </NoteStyled>
       <List sx={{ pt: 0 }}>
-        <ListItem autoFocus button onClick={() => handleListItemClick("View Portfolio")}>
-          <ListItemAvatar sx={{dispaly: "flex", justifyContent: "space-around"}}>
+        <ListItem
+          onClick={() => handleListItemClick("View Portfolio")}
+        >
+          <ListItemAvatar>
             <Avatar>
               <RocketIcon />
             </Avatar>
