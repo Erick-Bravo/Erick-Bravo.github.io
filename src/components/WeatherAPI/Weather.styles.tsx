@@ -37,4 +37,5 @@ export const HideOnMobile = styled(Box)({
     [`@media(max-width: ${breakpoints.tablet}px)`]: {
         display: "none"
      },
+     display: "flex"
 })

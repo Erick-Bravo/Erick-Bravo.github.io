@@ -2,10 +2,10 @@ import * as React from "react";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
+import { ListStyled, TabHRStyled, TabsStyled } from "./DynamicTabs.styled";
 import { SyntheticEvent, useState } from "react";
 import styled from "@emotion/styled";
-import { Link, List, ListItem, ListItemIcon } from "@mui/material";
+import { Link, ListItem, ListItemIcon } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { TechLabelStyled, TechLogoStyled } from "./TechLogo.styles";
 
@@ -136,14 +136,14 @@ const DynamicTabs = ({ tabData }: any) => {
                 </Typography>
                 {data.responsibilities.map((list) => {
                   return (
-                    <List key={list} sx={{ marginLeft: "35px" }}>
+                    <ListStyled key={list}>
                       <ListItem disablePadding>
                         <ListItemIcon>
                           <CheckCircleIcon sx={{ color: "green" }} />
                         </ListItemIcon>
                         {list}
                       </ListItem>
-                    </List>
+                    </ListStyled>
                   );
                 })}
               </>

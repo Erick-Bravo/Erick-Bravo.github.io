@@ -1,6 +1,6 @@
-import { Tabs } from "@mui/material";
+import { Box, List, Tabs } from "@mui/material";
 import { styled } from "@mui/system";
-import { color } from "../../StyleTheme/theme";
+import { breakpoints, color } from "../../StyleTheme/theme";
 
 export const TabsStyled = styled(Tabs)({
   ".MuiTabs-flexContainer": {
@@ -40,4 +40,12 @@ export const TabHRStyled = styled("hr")({
   borderStyle: "none",
   borderWidth: 0,
   marginBottom: "32px",
+});
+
+export const ListStyled = styled(List)({
+  fontSize: "14px",
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+    marginLeft: "35px",
+    fontSize: "16px",
+  },
 });
