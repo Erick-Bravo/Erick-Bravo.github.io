@@ -2,7 +2,7 @@ import { Box, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 
 import Card from "./Card";
-import { ButtonStyled, WeatherContainer } from "./Weather.styles";
+import { ButtonStyled, HideOnMobile, SeeWeatherContainer, WeatherContainer } from "./Weather.styles";
 import { currentWeatherCall } from "./WeatherAPIs";
 
 const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
@@ -44,6 +44,8 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
 
   return (
     <WeatherContainer>
+      <HideOnMobile>
+
       <Card
         name={yosemiteWeather.name}
         temp={yosemiteWeather.main.temp}
@@ -51,7 +53,7 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
         low={yosemiteWeather.main.temp_min}
         description={yosemiteWeather.weather[0].description}
         icon={yosemiteWeather.weather[0].icon}
-      />
+        />
       <Card
         name={boulderWeather.name}
         temp={boulderWeather.main.temp}
@@ -59,24 +61,26 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
         low={boulderWeather.main.temp_min}
         description={boulderWeather.weather[0].description}
         icon={boulderWeather.weather[0].icon}
-      />
+        />
+        </HideOnMobile>
       <Box>
         {currentWeather && (
           <Card
-            name={currentWeather.name}
-            temp={currentWeather.main.temp}
-            high={currentWeather.main.temp_max}
-            low={currentWeather.main.temp_min}
-            description={currentWeather.weather[0].description}
-            icon={currentWeather.weather[0].icon}
+          name={currentWeather.name}
+          temp={currentWeather.main.temp}
+          high={currentWeather.main.temp_max}
+          low={currentWeather.main.temp_min}
+          description={currentWeather.weather[0].description}
+          icon={currentWeather.weather[0].icon}
           />
-        )}
+          )}
+        <SeeWeatherContainer>
         {!currentWeather && !geoTurnedOff && (
           <>
             {buttonClicked ? (
               <CircularProgress color="primary" />
-            ) : (
-              <ButtonStyled onClick={getLocalWeather}>
+              ) : (
+                <ButtonStyled onClick={getLocalWeather}>
                 see your weather
               </ButtonStyled>
             )}
@@ -87,6 +91,7 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
             geolocation is off
           </Box>
         )}
+        </SeeWeatherContainer>
       </Box>
     </WeatherContainer>
   );

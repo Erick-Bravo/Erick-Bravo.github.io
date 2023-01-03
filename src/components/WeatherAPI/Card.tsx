@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
 import { Box } from "@mui/material";
+import { CardContainer } from "./Card.styles";
 
 type WeatherCardProps = {
   name: string;
@@ -11,10 +12,6 @@ type WeatherCardProps = {
   icon: string;
 };
 
-const CardContainer = styled(Box)({
-  color: "white",
-  width: "150px",
-});
 
 const floorTemp = (temp: number) => {
   return `${Math.floor(temp)}ºF`;
@@ -45,8 +42,8 @@ const Card = ({
           <Image
             src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
             alt={"weather-icon"}
-            width={"40"}
-            height={"40"}
+            width={"60"}
+            height={"60"}
           />
         </Box>
       </Box>
