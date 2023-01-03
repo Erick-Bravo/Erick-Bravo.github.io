@@ -14,7 +14,7 @@ const ListBFDI = [
 const ListLithia = [
   "Jumped in and learned existing client code base to perform duties.",
   "Help maintain and introduce many new features for the vehicle purchase cart flow.",
-  "Meet project deadlines for client stake holders."
+  "Met many project deadlines for client stake holders."
 ];
 
 const ListYosemite = [

@@ -32,10 +32,10 @@ const tabData = [
     },
   },
   {
-    label: "Good Routes",
-    title: "Good Routes",
+    label: "National Routes",
+    title: "National Routes",
     description:
-      "Good Routes is a fun clone of Good Reads group project while studying at App Academy.",
+      "National Routes is a fun clone of Good Reads group project while studying at App Academy.",
     tech: techGoodRoutes,
     website: {
       label: "Good Routes",
