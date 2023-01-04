@@ -9,6 +9,7 @@ const TechList = styled(Box)({
   alignItems: "center",
   height: "40px",
   color: "white",
+  marginBottom: "20px"
 });
 
 const Powered = styled(Typography)({

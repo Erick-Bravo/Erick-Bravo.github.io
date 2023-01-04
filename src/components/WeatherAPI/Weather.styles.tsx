@@ -11,6 +11,10 @@ export const WeatherContainer = styled(Box)({
         width: "700px",
         alignItems: "center",
         marginBottom: "40px",
+    },
+    [`@media(min-width: ${breakpoints.desktop}px)`]: {
+        width: "900px",
+        paddingRight: "25px"
      },
   });
 
@@ -19,9 +23,25 @@ export const ButtonStyled = styled(Button)({
     color: "black",
     fontWeight: 600,
     textTransform: "none",
+    height: "30px",
     ":hover": {
         color: "white"
-    }
+    },
+    [`@media(min-width: ${breakpoints.tablet}px)`]: {
+        width: "150px",
+        marginRight: "20px",
+     },
+    [`@media(min-width: ${breakpoints.desktop}px)`]: {
+        width: "200px",
+     },
+});
+
+export const AlwaysVisibleContainer = styled(Box)({
+    [`@media(min-width: ${breakpoints.tablet}px)`]: {
+        width: "200px",
+        margin: "0 30px",
+     },
+
 });
 
 export const SeeWeatherContainer = styled(Box)({
@@ -37,5 +57,7 @@ export const HideOnMobile = styled(Box)({
     [`@media(max-width: ${breakpoints.tablet}px)`]: {
         display: "none"
      },
-     display: "flex"
+     display: "flex",
+     justifyContent: "space-around",
+     width: "100%"
 })

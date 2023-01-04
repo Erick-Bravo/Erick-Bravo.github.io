@@ -48,8 +48,8 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
         yosemiteWeather={yosemiteWeather}
         boulderWeather={boulderWeather}
       />
-      <AllContent />
       <PoweredBy />
+      <AllContent />
     </PortfolioContainer>
   );
 };

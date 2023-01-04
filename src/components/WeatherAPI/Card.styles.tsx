@@ -8,7 +8,7 @@ export const CardContainer = styled(Box)({
     width: "300px",
     margin: "20px",
     [`@media(min-width: ${breakpoints.tablet}px)`]: {
-        width: "200px"
+        width: "200px",
      },
 })
 
@@ -21,4 +21,3 @@ export const FlexContainer = styled(Box)({
         marginLeft: "10px",
      },
 })
-

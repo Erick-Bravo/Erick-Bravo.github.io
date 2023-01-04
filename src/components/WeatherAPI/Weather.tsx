@@ -2,7 +2,7 @@ import { Box, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
 
 import Card from "./Card";
-import { ButtonStyled, HideOnMobile, SeeWeatherContainer, WeatherContainer } from "./Weather.styles";
+import { AlwaysVisibleContainer, ButtonStyled, HideOnMobile, SeeWeatherContainer, WeatherContainer } from "./Weather.styles";
 import { currentWeatherCall } from "./WeatherAPIs";
 
 const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
@@ -63,7 +63,7 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
         icon={boulderWeather.weather[0].icon}
         />
         </HideOnMobile>
-      <Box>
+      <AlwaysVisibleContainer>
         {currentWeather && (
           <Card
           name={currentWeather.name}
@@ -92,7 +92,7 @@ const Weather = ({ yosemiteWeather, boulderWeather }: any) => {
           </Box>
         )}
         </SeeWeatherContainer>
-      </Box>
+      </AlwaysVisibleContainer>
     </WeatherContainer>
   );
 };
