@@ -8,7 +8,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import RocketIcon from "@mui/icons-material/Rocket";
 import Image from "next/image";
-import { Box } from "@mui/system";
 import { color } from "../../StyleTheme/theme";
 import { DialogTitleStyled, EmojiContainer, NoteStyled } from "./Modal.styles";
 
@@ -75,9 +74,7 @@ const Modal = ({
   handleClose: () => void;
 }) => {
   return (
-    <Box>
       <SimpleDialog open={open} onClose={handleClose} />
-    </Box>
   );
 };
 

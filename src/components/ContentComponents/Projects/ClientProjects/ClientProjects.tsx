@@ -72,7 +72,7 @@ const tabData = [
     },
   },
   {
-    label: "Yosemite National Park",
+    label: "Yosemite NP",
     title: "Yosemite Community Website",
     description:
     "Yoscommunity.com website was created to help provide resources to the 2000+ employees who live in Yosemite National Park.",
