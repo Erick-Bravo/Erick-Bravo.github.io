@@ -9,13 +9,14 @@ export const IntroContainer = styled(Box)({
   alignItems: "center",
   flexDirection: "column",
   width: "100%",
-  height: "350px",
   padding: "20px 40px",
+  marginBottom: "30px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     display: "flex",
     justifyContent: "space-between",
     flexDirection: "row",
     width: "700px",
+    marginTop: "40px",
   },
   [`@media(min-width: ${breakpoints.desktop}px)`]: {
     width: "800px",
@@ -42,6 +43,7 @@ export const NameTypography = styled(Typography, {
   visibility: props.open ? "hidden" : "visible",
   fontSize: "32px",
   marginBottom: "20px",
+  marginTop: "20px",
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     fontSize: "45px",
   },
@@ -51,7 +53,7 @@ export const TitleTypography = styled(Typography, {
   shouldForwardProp: (prop) => preventDomList(prop),
 })<NameStyledProps>((props) => ({
   visibility: props.open ? "hidden" : "visible",
-  fontSize: "12.5px",
+  fontSize: "20px",
   opacity: 0.7,
   [`@media(min-width: ${breakpoints.tablet}px)`]: {
     fontSize: "25px",
@@ -59,9 +61,10 @@ export const TitleTypography = styled(Typography, {
 }));
 
 export const ResumeLink = styled(Link)({
-  fontSize: "10px",
-  marginTop: "10px",
+  fontSize: "16px",
+  marginTop: "40px",
   color: "white",
+  textDecorationLine: "underline",
   opacity: 0.7,
   ":hover": {
     opacity: 1,
