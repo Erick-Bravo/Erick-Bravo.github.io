@@ -5,7 +5,7 @@ import { breakpoints } from "../../StyleTheme/theme";
 
 export const CardContainer = styled(Box)({
     color: "white",
-    width: "300px",
+    width: "250px",
     margin: "20px",
     [`@media(min-width: ${breakpoints.tablet}px)`]: {
         width: "200px",

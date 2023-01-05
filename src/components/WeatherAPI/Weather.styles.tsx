@@ -23,7 +23,8 @@ export const ButtonStyled = styled(Button)({
     color: "black",
     fontWeight: 600,
     textTransform: "none",
-    height: "30px",
+    height: "40px",
+    width: "175px",
     ":hover": {
         color: "white"
     },
