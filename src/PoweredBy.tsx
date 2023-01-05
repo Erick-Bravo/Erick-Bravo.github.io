@@ -5,12 +5,15 @@ import { breakpoints } from "./StyleTheme/theme";
 
 const TechList = styled(Box)({
   display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "40px",
+  flexDirection: "column",
   color: "white",
   marginTop: "30px",
   marginBottom: "20px",
+
+  [`@media(min-width: ${breakpoints.tablet}px)`]: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
 });
 
 const Powered = styled(Typography)({
