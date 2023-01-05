@@ -11,14 +11,14 @@ import { gsap } from "gsap";
 import SplitType from 'split-type'
 
 const App = ({ yosemiteWeather, boulderWeather }: any) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleClose = () => {
     setOpen(false);
   };
 
   useEffect(() => {
-    if (!open) {
+    // if (!open) {
       const name = document.getElementById("name")!;
       const title = document.getElementById("title")!;
       const splitName = new SplitType(name, {charClass: "namechar"})
@@ -37,12 +37,12 @@ const App = ({ yosemiteWeather, boulderWeather }: any) => {
         stagger: 0.05,
         delay: 0.5,
       });
-    }
-  }, [open])
+    // }
+  }, []);
 
   return (
     <PortfolioContainer>
-      <Modal open={open} handleClose={handleClose} />
+      {/* <Modal open={open} handleClose={handleClose} /> */}
       <Intro open={open} />
       <WeatherAPI
         yosemiteWeather={yosemiteWeather}

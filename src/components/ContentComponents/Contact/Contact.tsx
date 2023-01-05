@@ -23,9 +23,9 @@ const Contact = () => {
       <InfoContainer>
         <Typography>
           Email:{" "}
-          <Link href="mailto:erickbravo120@gmail.com?subject=Subject&body=Body%20goes%20here'">
+          {/* <Link href="mailto:erickbravo120@gmail.com?subject=Subject&body=Body%20goes%20here'"> */}
             erickbravo120@gmail.com
-          </Link>
+          {/* </Link> */}
         </Typography>
         <Typography>Phone: (909) 354-6272</Typography>
       </InfoContainer>

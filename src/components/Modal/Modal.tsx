@@ -9,7 +9,7 @@ import Dialog from "@mui/material/Dialog";
 import RocketIcon from "@mui/icons-material/Rocket";
 import Image from "next/image";
 import { color } from "../../StyleTheme/theme";
-import { DialogTitleStyled, EmojiContainer, NoteStyled } from "./Modal.styles";
+import { DialogStyled, DialogTitleStyled, EmojiContainer, NoteStyled } from "./Modal.styles";
 
 export interface SimpleDialogProps {
   open: boolean;
@@ -28,7 +28,7 @@ const SimpleDialog = (props: SimpleDialogProps) => {
   };
 
   return (
-    <Dialog onClose={handleClose} open={open}>
+    <DialogStyled onClose={handleClose} open={open} maxWidth="md" sx={{}}>
       <DialogTitle sx={{ backgroundColor: color.gray.one, color: "white", marginBottom: "15px" }}>
         Welcome to my Portfolio!
       </DialogTitle>
@@ -62,7 +62,7 @@ const SimpleDialog = (props: SimpleDialogProps) => {
           <ListItemText primary="View Portfolio" />
         </ListItem>
       </List>
-    </Dialog>
+    </DialogStyled>
   );
 };
 

@@ -1,7 +1,17 @@
 import styled from "@emotion/styled";
-import { Box, DialogTitle } from "@mui/material";
+import { Box, Dialog, DialogTitle } from "@mui/material";
 import { breakpoints } from "../../StyleTheme/theme";
 
+export const DialogStyled = styled(Dialog)({
+    ".MuiDialog-root": {
+        width: "75%"
+    },
+    ".MuiBackdrop-root": {
+    },
+    ".MuiPaper-root": {
+
+    }
+});
 
 export const NoteStyled = styled(Box)({
     marginBottom: "20px",
@@ -14,7 +24,6 @@ export const NoteStyled = styled(Box)({
 
 export const EmojiContainer = styled(Box)({
     [`@media(max-width: ${breakpoints.tablet}px)`]: {
-        width: "100%",
         textAlign: "center"
     },
 });
