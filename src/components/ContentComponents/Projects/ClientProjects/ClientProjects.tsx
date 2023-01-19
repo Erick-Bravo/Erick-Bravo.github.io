@@ -46,19 +46,6 @@ const techYosemite = [
 
 const tabData = [
   {
-    label: "BFDI",
-    title: "Black Family Development, Inc - Mental Health Check-in",
-    description:
-    "Black Family Development Inc’s mission is to strengthen and enhance the lives of children, youth, and families through partnerships that support safe, nurturing, vibrant homes, schools and communities. From beggining to end, I was on a team that created a mental health check-in that works as a Progressive Web Application. In this app, a user will take an assessment and is directed relevant resources depending on user score.",
-    responsibilities: ListBFDI,
-    tech: techBFDI,
-    videoLink: "/BFDI.mp4",
-    website: {
-      label: "Hope is Here By BFDI",
-      link: "",
-    },
-  },
-  {
     label: "Lithia Motors",
     title: "Driveway",
     description:
@@ -82,6 +69,19 @@ const tabData = [
     website: {
       label: "Yosemite Community Website",
       link: "https://www.yoscommunity.com",
+    },
+  },
+  {
+    label: "BFDI",
+    title: "Black Family Development, Inc - Mental Health Check-in",
+    description:
+    "Black Family Development Inc’s mission is to strengthen and enhance the lives of children, youth, and families through partnerships that support safe, nurturing, vibrant homes, schools and communities. From beggining to end, I was on a team that created a mental health check-in that works as a Progressive Web Application. In this app, a user will take an assessment and is directed relevant resources depending on user score.",
+    responsibilities: ListBFDI,
+    tech: techBFDI,
+    videoLink: "/BFDI.mp4",
+    website: {
+      label: "Hope is Here By BFDI",
+      link: "",
     },
   },
 ];
