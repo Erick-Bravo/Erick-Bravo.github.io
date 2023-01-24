@@ -36,7 +36,7 @@ const Intro = ({open}: {open: boolean}) => {
     <IntroContainer>
       <NameAndTitleContainer>
         <NameTypography id="name" open={open}>ERICK BRAVO</NameTypography>
-        <TitleTypography id="title" open={open}>Application Developer</TitleTypography>
+        <TitleTypography id="title" open={open}>Software Developer</TitleTypography>
         <ResumeLink
           href="/ErickBravoResume.pdf"
           target={"_blank"}
