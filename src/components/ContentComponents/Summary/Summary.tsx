@@ -38,14 +38,14 @@ const Summary = () => {
       <Paragraph paragraph>
         As a <span style={{ fontWeight: "bold" }}>Frontend React developer</span> with
         many <span style={{ fontWeight: "bold" }}>Fullstack</span> capabilities, I am a self-motivated and enthusiastic
-        problem solver with 3 years programming experience. I have worked on a variety of projects both large and small with a 
+        problem solver with 3 years programming experience ready to take on a new task. I have worked on a variety of projects both large and small with a 
         focus on responsiveness and performance, while engaging in an Agile workplace.
         I enjoy working in environments that require effective
         and extensive direct communication with design teams and stakeholders. 
         During my last role, I experienced exponential growth in areas of leadership and 
         professional software development due to my need to be in a constant learning and curious state.
         I have worked with teammates of all
-        time zones across the United States and I am eager to again provide skillful contributions on an existing project, or a fresh one.
+        time zones across the United States and I am eager to again provide skillful contributions on an existing project, or a new one.
       </Paragraph>
       <Testimonial align="center">
         “I can not imagine where [the project] would be without Erick, nor would
