@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { breakpoints } from "../../../StyleTheme/theme";
 import { SummaryAnchor } from "../../Navbar/NavBar.styles";
 import Header from "../Header/Header";
+import Skills from "./Skills";
 
 const SummaryContainer = styled(Box)({
   marginBottom: "40px",
@@ -35,19 +36,16 @@ const Summary = () => {
       <SummaryAnchor id="Summary"/>
       <Header text="Summary" />
       <Paragraph paragraph>
-        Hello! My name is Erick Bravo and I am a self-motivated and enthusiastic
-        software developer from California. I am a{" "}
-        <span style={{ fontWeight: "bold" }}>front-end developer</span> with
-        many <span style={{ fontWeight: "bold" }}>back-end</span> capabilities
-        and have worked on high impact client projects which required effective
-        and extensive direct communication with design teams and product
-        management. I absolutely love putting in the time to learn and explore
-        new tech if it means moving the team forward. Besides past client
-        projects, I have revamped the Yosemite community website which benefits
-        2000+ employees who live in Yosemite National Park. My entire career has
-        been so far fully remote. I have worked with teammates of all
-        time zones, and I am eager to provide skillful contributions on a
-        project of high demand and reward.
+        As a <span style={{ fontWeight: "bold" }}>Frontend React developer</span> with
+        many <span style={{ fontWeight: "bold" }}>Fullstack</span> capabilities, I am a self-motivated and enthusiastic
+        problem solver with 3 years programming experience. I have worked on a variety of projects both large and small with a 
+        focus on responsiveness and performance, while engaging in an Agile workplace.
+        I enjoy working in environments that require effective
+        and extensive direct communication with design teams and stakeholders. 
+        During my last role, I experienced exponential growth in areas of leadership and 
+        professional software development due to my need to be in a constant learning and curious state.
+        I have worked with teammates of all
+        time zones across the United States and I am eager to again provide skillful contributions on an existing project, or a fresh one.
       </Paragraph>
       <Testimonial align="center">
         “I can not imagine where [the project] would be without Erick, nor would
@@ -57,6 +55,8 @@ const Summary = () => {
           - Brandon, colleague Detroit Labs
         </span>
       </Testimonial>
+      <Header text="Skills" />
+      <Skills />
     </SummaryContainer>
   );
 };
