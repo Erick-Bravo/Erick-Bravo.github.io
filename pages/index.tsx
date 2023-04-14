@@ -18,10 +18,10 @@ const Home = ({ yosemiteWeather, boulderWeather }: any) => {
 export default Home;
 
 export const getServerSideProps = async () => {
-  const yosemiteURL = `https://api.openweathermap.org/data/2.5/weather?lat=${37.7456}&lon=${-119.5936}&units=imperial&appid=${
+  const yosemiteURL = `https://api.openweathermap.org/data/2.5/weather?lat=${34.0522}&lon=${-118.2437}&units=imperial&appid=${
     process.env.NEXT_PUBLIC_WEATHER_KEY
   }`;
-  const boulderURL = `https://api.openweathermap.org/data/2.5/weather?lat=${39.9866}&lon=${-105.2939}&units=imperial&appid=${
+  const boulderURL = `https://api.openweathermap.org/data/2.5/weather?lat=${40.7128}&lon=${-74.0060}&units=imperial&appid=${
     process.env.NEXT_PUBLIC_WEATHER_KEY
   }`;
 
